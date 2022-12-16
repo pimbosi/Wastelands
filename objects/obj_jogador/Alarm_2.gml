@@ -1,6 +1,10 @@
 //Intervalo entre atks bola de fogo
 
-
+if (keyboard_check(vk_enter))
+	{
+		fire0 = 1;
+		alarmtime[2] = 150;
+	}
 
 switch(fire0)
 {
