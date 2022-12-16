@@ -2,7 +2,7 @@
 //andar
 
 walkspeed = 2;
-
+//teste
 #endregion
 
 #region intervalo dos atks
