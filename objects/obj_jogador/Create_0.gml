@@ -35,5 +35,5 @@ axe_up = 0;
 fireball_up = 0;
 
 melee_dmg = 5 + melee_up;
-axe_dmg = 30
+axe_dmg = 30;
 fireball_dmg = 15 + fireball_up;

@@ -5,10 +5,9 @@ for(var i = 1; i < 10; i++)
 {
 	if (keyboard_check(vk_shift))
 	{
-		axe0 = 1
-		//axe_up = axe_dmg * i/10;
-		//axe_dmg += axe_up;
-		alarmtime[1] = 170 //-(i * 2);
+		axe0 = 1		
+		//dmg = obj_jogador.axe_dmg[i]; 
+		alarmtime[1] = 170 -(i * 2);
 	}
 } 
 

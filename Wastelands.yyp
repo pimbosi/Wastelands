@@ -1,7 +1,7 @@
 {
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
-  "name": "Vampire survavors",
+  "name": "Wastelands",
   "resources": [
     {"id":{"name":"obj_weapon_parent","path":"objects/obj_weapon_parent/obj_weapon_parent.yy",},"order":3,},
     {"id":{"name":"spr_jogador","path":"sprites/spr_jogador/spr_jogador.yy",},"order":0,},
@@ -12,10 +12,8 @@
     {"id":{"name":"obj_weapon_axe","path":"objects/obj_weapon_axe/obj_weapon_axe.yy",},"order":0,},
     {"id":{"name":"spr_enemy_02","path":"sprites/spr_enemy_02/spr_enemy_02.yy",},"order":1,},
     {"id":{"name":"obj_enemy_01","path":"objects/obj_enemy_01/obj_enemy_01.yy",},"order":0,},
-    {"id":{"name":"dmg_popup","path":"fonts/dmg_popup/dmg_popup.yy",},"order":0,},
     {"id":{"name":"spr_enemy_01","path":"sprites/spr_enemy_01/spr_enemy_01.yy",},"order":0,},
     {"id":{"name":"obj_jogador","path":"objects/obj_jogador/obj_jogador.yy",},"order":0,},
-    {"id":{"name":"obj_damage_draw","path":"objects/obj_damage_draw/obj_damage_draw.yy",},"order":14,},
     {"id":{"name":"spr_axe","path":"sprites/spr_axe/spr_axe.yy",},"order":0,},
     {"id":{"name":"obj_weapon_melee","path":"objects/obj_weapon_melee/obj_weapon_melee.yy",},"order":2,},
     {"id":{"name":"spr_whiteenemy_02","path":"sprites/spr_whiteenemy_02/spr_whiteenemy_02.yy",},"order":3,},
