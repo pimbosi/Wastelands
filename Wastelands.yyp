@@ -18,6 +18,7 @@
     {"id":{"name":"spr_axe","path":"sprites/spr_axe/spr_axe.yy",},"order":0,},
     {"id":{"name":"obj_weapon_melee","path":"objects/obj_weapon_melee/obj_weapon_melee.yy",},"order":2,},
     {"id":{"name":"spr_menu_loja_bg","path":"sprites/spr_menu_loja_bg/spr_menu_loja_bg.yy",},"order":1,},
+    {"id":{"name":"obj_test_spawn","path":"objects/obj_test_spawn/obj_test_spawn.yy",},"order":5,},
     {"id":{"name":"spr_font_menu_loja","path":"sprites/spr_font_menu_loja/spr_font_menu_loja.yy",},"order":0,},
     {"id":{"name":"spr_whiteenemy_02","path":"sprites/spr_whiteenemy_02/spr_whiteenemy_02.yy",},"order":3,},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"order":2,},
