@@ -25,6 +25,18 @@ slot[1] = "axe";
 slot[2] = "fireball";
 
 #endregion 
+ //poderes
+global.powers = [
+	["Bola de fogo","Lança bolas fogo", spr_fireball, 0, 5], 
+	["Machado","Atira machados", spr_axe, 0, 5], 
+	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
+	["Bola de gelo", "Dano e atrasa os inimigos", spr_fireball, 0, 5],
+	["power 4","power 4 info", spr_axe, 0, 5],
+	["power 5","power 5 info", spr_fireball, 0, 5],
+	["power 6","power 6 info", spr_melee, 0, 6],
+	["power 7","power 7 info", spr_fireball, 0,3]  
+		]
+array_push(global.powers, ["Power 8","P8", spr_fireball, 0,5])
 
 melee0 = 0;
 axe0 = 0;
