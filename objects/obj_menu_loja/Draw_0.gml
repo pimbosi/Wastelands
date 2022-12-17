@@ -47,8 +47,11 @@ if !surface_exists(paused_surf)
 		if(point_in_rectangle(mx, my, x1, y1, x2, y2)){
 			draw_set_font(f_tn)
 			draw_set_color(c_black)
-			draw_text_transformed(wgui/2, hgui/2 -150, global.chosen_ones[i][1],
-										 1,1,image_angle);
+			msg = global.chosen_ones[i][1]
+			draw_text_transformed(wgui/2, hgui/2-150, msg, 1,1,image_angle)
+			msg = "Nivel atual da habilidade: " + string(global.chosen_ones[i][3])
+			draw_text_transformed(wgui/2, hgui/2-150+string_height("I"),
+									msg, 1,1,image_angle)
 			draw_set_color(noone)
 			
 			draw_sprite(global.chosen_ones[i][2], -1, wgui/2-10, hgui/2-60)
@@ -80,8 +83,8 @@ if !surface_exists(paused_surf)
 		}
 		
 		draw_set_font(bitmap_font)
-		draw_text_transformed(wgui/2, hgui/2+30 + hp*i, global.chosen_ones[i][0],ss,
-								ss,image_angle);
+		msg = global.chosen_ones[i][0]
+		draw_text_transformed(wgui/2, hgui/2+30 + hp*i, msg,ss, ss,image_angle);
 							
 	}
 	draw_set_valign(-1)
