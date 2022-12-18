@@ -20,10 +20,10 @@ if _num > 0
 			_list[| i].sprite_index = _list[| i].sprW;
 					
 			
-				_list[| i].hp -= dmg; 	
+				_list[| i].inimigo_hp -= dmg; 	
 		
 			
-			if(_list[| i].hp <= 0)
+			if(_list[| i].inimigo_hp <= 0)
 			{
 				instance_destroy(_list[| i]);
 			}
