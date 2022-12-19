@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_faca",
   "spriteId": {
-    "name": "Sprite9",
-    "path": "sprites/Sprite9/Sprite9.yy",
+    "name": "spr_faca",
+    "path": "sprites/spr_faca/spr_faca.yy",
   },
   "solid": false,
   "visible": true,
