@@ -13,4 +13,3 @@ maxXP = (30 + (lvl * 100) - 20);
 
 globalvar hp;
 hp = 40
-

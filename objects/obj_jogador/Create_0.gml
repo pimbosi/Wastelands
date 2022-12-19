@@ -30,6 +30,8 @@ slot[2] = "fireball";
 slot[3] = "faca"
 
 #endregion 
+
+
  //poderes
 global.powers = [
 	["Bola de fogo","Lança bolas fogo", spr_fireball, 0, 5], 
