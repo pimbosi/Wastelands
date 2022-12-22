@@ -1,4 +1,4 @@
-//ataque do machado
+///@description ataque do machado
 
 var axe = instance_create_layer(x,y, "Instances", obj_weapon_axe);
 		axe.direction = irandom_range(45,135);

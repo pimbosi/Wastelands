@@ -1,4 +1,4 @@
-//Intervalo entre atks bola de fogo
+///@descr Intervaloatks bola de fogo
 
 if (keyboard_check(vk_enter))
 	{

@@ -1,4 +1,4 @@
-/// @description Faca
+/// @description Intervalo atks da Faca
 
 if (keyboard_check(vk_enter))
 	{

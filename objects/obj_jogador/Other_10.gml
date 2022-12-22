@@ -1,4 +1,4 @@
-//ataque melee
+///@description ataque melee
 for(var i = 1; i < 10; i++)
 {
 	if (keyboard_check(vk_space))
