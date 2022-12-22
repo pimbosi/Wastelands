@@ -1,4 +1,4 @@
-//Intervalo entre atks melee
+///@description Intervalo atks melee
 
 for(var i = 1; i < 10; i++)
 {

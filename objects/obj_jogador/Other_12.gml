@@ -1,4 +1,4 @@
-//ataque da bola de fogo
+///@descr ataque da bola de fogo
 
 
 var fireball= instance_create_layer(x,y, "Instances", obj_weapon_fireball);	
