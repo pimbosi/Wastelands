@@ -1,11 +1,8 @@
-if paused == true
-{
-if !surface_exists(paused_surf)
-    {
-    if paused_surf == -1
-        {
+if paused == true {
+if !surface_exists(paused_surf) {
+    if paused_surf == -1 {
 		 instance_deactivate_all(true);
-        }
+    }
     paused_surf = surface_create(display_get_gui_width(), display_get_gui_height());
 	//screenShot = sprite_create_from_surface(application_surface,view_xview[0],view_yview[0],view_wview[0],view_hview[0],0,0,0,0)
 
@@ -22,8 +19,9 @@ if !surface_exists(paused_surf)
 	hgui = camera_get_view_y(view_camera[0]) + display_get_gui_height()/2 
 	
 	draw_sprite(screenShot,0,camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]))
-
-	draw_sprite(spr_menu_loja_bg, -1, wgui-180, hgui-200)
+    //Desenhando o background do menu
+	draw_sprite_ext(sprite_index, image_index, wgui-150, hgui-170,width/sprite_width, height/sprite_height, 0, c_white,1)
+   
 	
 	draw_set_color(noone)
 	for(var i = 0; i < poderes_escolhidos;i++){
