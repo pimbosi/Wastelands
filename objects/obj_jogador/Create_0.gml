@@ -46,6 +46,7 @@ global.powers = [
 		]
 array_push(global.powers, ["Power 8","P8", spr_fireball, 0,5])
 
+<<<<<<< Updated upstream
 //dano dos poderes
 
 melee_dmg = 5;
@@ -55,3 +56,9 @@ faca_dmg = 5;
 
 #endregion
 
+=======
+//dano dos ataques
+melee_dmg = 5;
+axe_dmg = 30;
+fireball_dmg = 15;
+>>>>>>> Stashed changes
