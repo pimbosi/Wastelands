@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_menu_loja",
   "spriteId": {
-    "name": "spr_menu_loja_bg",
-    "path": "sprites/spr_menu_loja_bg/spr_menu_loja_bg.yy",
+    "name": "spr_bg_menu",
+    "path": "sprites/spr_bg_menu/spr_bg_menu.yy",
   },
   "solid": false,
   "visible": true,

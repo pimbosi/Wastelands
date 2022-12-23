@@ -4,7 +4,7 @@ boost_walk = lvl*0.5;
 
 #region movimentação
 
-//andar com setinhas
+//andar com setinhas e com wasd
 
 var left = keyboard_check(vk_left);
 var right = keyboard_check(vk_right);

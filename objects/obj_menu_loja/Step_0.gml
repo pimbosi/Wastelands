@@ -1,10 +1,6 @@
-
-
-if keyboard_check_pressed(ord("P")){
-	
+if keyboard_check_pressed(ord("P")){	
 
     screenShot = sprite_create_from_surface(application_surface,view_xview[0],view_yview[0],view_wview[0],view_hview[0],0,0,0,0)   
-    
 	
 	global.chosen_ones = []
 	escolhidos = []
