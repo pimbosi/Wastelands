@@ -1,4 +1,4 @@
-//Intervalo entre atks machado
+///@description Intervalo atks machado
 
 
 for(var i = 1; i < 10; i++)
