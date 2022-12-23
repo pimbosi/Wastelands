@@ -1,3 +1,4 @@
+///@description colisão da arma com inimigo
 
 var _list = ds_list_create();
 var _num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_enemy_parent, false, true, _list, false);
@@ -19,12 +20,13 @@ if _num > 0
 			//sprite branco
 			_list[| i].sprite_index = _list[| i].sprW;
 					
-			
+				//dano sofrido
 				_list[| i].inimigo_hp -= dmg; 	
 		
 			
 			if(_list[| i].inimigo_hp <= 0)
 			{
+				//destruir entidade
 				instance_destroy(_list[| i]);
 			}
 		}
@@ -33,4 +35,3 @@ if _num > 0
 
 ds_list_destroy(_list);
 
-//instance_create_layer(x, y, "DANO", obj_damage_draw)

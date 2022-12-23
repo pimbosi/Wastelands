@@ -1,4 +1,4 @@
-
+///@description movimentação de inimigo
 
 with(obj_enemy_parent)
 {

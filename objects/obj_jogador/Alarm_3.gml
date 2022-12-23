@@ -1,20 +1,18 @@
 /// @description Faca
 
-if (keyboard_check(vk_enter))
-	{
-		faca0 = 1;
-		alarmtime[3] = 150;
-	}
-
-switch(faca0)
+if (global.powers[3][3] > 0)
 {
-	case 1 : 
-		event_user(3);			
-	break;
+	alarmtime[3] = 100;	
 	
-	default:
-	break;
+	switch(faca_dmg)
+	{
+		case faca_dmg : 
+			event_user(3);			
+		break;
 	
+		default:
+		break;	
+	}
 }
 
 alarm[3] = alarmtime[3];

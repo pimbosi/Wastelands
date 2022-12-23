@@ -1,26 +1,19 @@
-//Intervalo entre atks machado
+/// @description Machado
 
-
-for(var i = 1; i < 10; i++)
+if(global.powers[1][3] > 0)
 {
-	if (keyboard_check(vk_shift))
+	alarmtime[1] = 170;
+		
+	switch(axe_dmg)
 	{
-		axe0 = 1		
-		//dmg = obj_jogador.axe_dmg[i]; 
-		alarmtime[1] = 170 -(i * 2);
-	}
-} 
+		case axe_dmg : 
+			event_user(1);			
+		break;
 
-switch(axe0)
-{
-	case 1 : 
-		event_user(1);			
-	break;
-	
-	default:
-	break;
-	
-}	
+		default: 
+		break;	
+	}		
+}
 
 alarm[1] = alarmtime[1];
 

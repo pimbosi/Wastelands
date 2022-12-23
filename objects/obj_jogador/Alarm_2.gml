@@ -1,20 +1,18 @@
-//Intervalo entre atks bola de fogo
+///@description Bola de Fogo
 
-if (keyboard_check(vk_enter))
-	{
-		fire0 = 1;
-		alarmtime[2] = 150;
-	}
-
-switch(fire0)
+if(global.powers[0][3] > 0)
 {
-	case 1 : 
-		event_user(2);			
-	break;
-	
-	default:
-	break;
-	
+	alarmtime[2] = 150;
+		
+	switch(fireball_dmg)
+	{
+		case fireball_dmg : 
+			event_user(1);			
+		break;
+
+		default:
+		break;	
+	}	
 }
 
 alarm[2] = alarmtime[2];
