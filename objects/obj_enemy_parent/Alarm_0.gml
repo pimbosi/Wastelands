@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 ///@description movimentação de inimigo
-=======
-//inimigo seguir o player
->>>>>>> Stashed changes
 
 with(obj_enemy_parent)
 {

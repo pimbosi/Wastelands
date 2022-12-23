@@ -1,9 +1,6 @@
 /// @description Melee
 
-<<<<<<< Updated upstream
 //switch pra já iniciar com o melee
-=======
->>>>>>> Stashed changes
 switch(melee_dmg)
 {
 	case melee_dmg : 
