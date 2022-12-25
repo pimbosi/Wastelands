@@ -38,7 +38,7 @@ global.powers = [
 	["Machado","Atira machados", spr_axe, 0, 5], 
 	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
 	["Bola de gelo", "Dano e atrasa os inimigos", spr_fireball, 0, 5],
-	["power 4","power 4 info", spr_axe, 0, 5],
+	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
 	["power 5","power 5 info", spr_fireball, 0, 5],
 	["power 6","power 6 info", spr_melee, 0, 6],
 	["power 7","power 7 info", spr_fireball, 0,3]  
@@ -59,3 +59,4 @@ melee_dmg = 5 + melee_up;
 axe_dmg = 30;
 fireball_dmg = 15 + fireball_up;
 faca_dmg = 5 + faca_up;
+

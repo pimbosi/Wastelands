@@ -1,4 +1,4 @@
-if paused == true {
+if (paused == true) {
 if !surface_exists(paused_surf) {
     if paused_surf == -1 {
 		 instance_deactivate_all(true);
