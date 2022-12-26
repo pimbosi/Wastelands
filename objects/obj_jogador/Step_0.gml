@@ -21,3 +21,5 @@ y += vertical*walkspeed*boost_walk
  if (horizontal<0){image_xscale = -1}
  
  #endregion
+
+

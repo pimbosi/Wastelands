@@ -1,6 +1,6 @@
 ///@descr Intervaloatks bola de fogo
-
-if (keyboard_check(vk_enter))
+if(FlagBolaDeFogo) bolaDeFogoAtiva = true; //Se a flag tiver ativa o poder é acionado
+if (bolaDeFogoAtiva)
 	{
 		fire0 = 1;
 		alarmtime[2] = 150;

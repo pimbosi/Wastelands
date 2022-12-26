@@ -1,9 +1,9 @@
 ///@description Intervalo atks machado
-
+if(FlagMachado) machadoAtivo = true; //Se a flag tiver ativa o poder é acionado
 
 for(var i = 1; i < 10; i++)
 {
-	if (keyboard_check(vk_shift))
+	if (machadoAtivo)
 	{
 		axe0 = 1		
 		//dmg = obj_jogador.axe_dmg[i]; 

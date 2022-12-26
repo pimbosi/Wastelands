@@ -25,6 +25,7 @@ if (lojaOpen){//Se a variável interna de controle da loja estiver aberta(true),
 		}
 		
 	}
+	tamanho = array_length(global.chosen_ones); 
 	
 	if(poderes_escolhidos < 3){
 		
@@ -39,6 +40,7 @@ if (lojaOpen){//Se a variável interna de controle da loja estiver aberta(true),
         paused_surf = -1;
     }
 }
+
 if paused == true{
     alarm[0]++;
     alarm[1]++;

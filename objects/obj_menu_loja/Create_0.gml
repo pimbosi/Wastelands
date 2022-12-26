@@ -22,6 +22,16 @@ bg_poderes_height = 82 //Altura da sprite de fundo dos poderes
 poderes_width = 30 //Largura da sprite dos poderes
 poderes_height = 30 //Altura da sprite dos poderes
 
+//Controle do iventário
+globalvar FlagMachado; //Criando a Flag do machado
+FlagMachado = false; //FlagMachado desativada
+globalvar FlagBolaDeFogo; //Criando a Flag da bola de fogo
+FlagBolaDeFogo = false; //Flag da Bola de fogo desativada
+globalvar FlagFaca; //Criando a Flag da faca
+FlagFaca = false; //Flag da faca desativada
+
+
+
 //randomize()
 function array_get_value(searchArray, findValue){
 	i = 0

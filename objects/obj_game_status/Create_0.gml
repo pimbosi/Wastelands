@@ -17,8 +17,6 @@ hp = 40
 globalvar loja; //Variável que indica se a loja está aberta ou não
 loja = false; //Loja inicialmente fechada
 
-xpNoMomento = ((xp/maxXP)*100); 
-/*Variável que indica em porcentagem o tanto de xp 
-  que o personagem tem no exato momento
-  utilizado para a criação da barra de xp*/
+
+
 
