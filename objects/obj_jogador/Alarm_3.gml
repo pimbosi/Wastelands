@@ -1,6 +1,6 @@
 /// @description Intervalo atks da Faca
-
-if (keyboard_check(vk_enter))
+if(FlagFaca) facaAtiva = true; //Se a flag tiver ativa o poder é acionado
+if (facaAtiva)
 	{
 		faca0 = 1;
 		alarmtime[3] = 150;

@@ -1,4 +1,4 @@
-if paused == true {
+if (paused == true) {
 if !surface_exists(paused_surf) {
     if paused_surf == -1 {
 		 instance_deactivate_all(true);
@@ -27,27 +27,33 @@ if !surface_exists(paused_surf) {
 	draw_text_transformed(wgui-75, hgui-175, msg, 1.5,1.5,image_angle)
     
    
-	for(var i = 0; i < poderes_escolhidos;i++){		
+	for(var i = 0; i < poderes_escolhidos;i++){	
+		
+		var esclhd_Nome = global.chosen_ones[i][0];
+		var esclhd_Descricao = global.chosen_ones[i][1];
+		var esclhd_Sprite = global.chosen_ones[i][2];
+		var esclhd_Nivel = global.chosen_ones[i][3];
+		var esclhd_Nsei = global.chosen_ones[i][4];
+		var esclhd_Id = global.chosen_ones[i][5];
 		
 		//Desenhando o background das opções
 	    draw_sprite_ext(spr_bg_menuOpcao, 0,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
 		//Desenhando o título dos poderes 
-		msg = global.chosen_ones[i][0] 
-		draw_text_transformed(wgui-70, hgui-113 + bg_opcao_space*i , msg, 1,1,image_angle)	 
+		draw_text_transformed(wgui-70, hgui-113 + bg_opcao_space*i , esclhd_Nome, 1,1,image_angle)	 
 		//Desenhando a descrição dos poderes
-		msg = global.chosen_ones[i][1]
-		draw_text_transformed(wgui-70, hgui-80 + bg_opcao_space*i, msg, 1,1,image_angle) 
+		draw_text_transformed(wgui-70, hgui-80 + bg_opcao_space*i, esclhd_Descricao, 1,1,image_angle) 
 		//Desenha o nível
-		msg = "Nível: " + string(global.chosen_ones[i][3])
+		msg = "Nível: " + string(esclhd_Nivel)
 		draw_text_transformed(wgui+95, hgui-113+ bg_opcao_space*i, msg, 1,1,image_angle)
 		
 		//Desenhando o background dos poderes
 		draw_sprite_ext(spr_bg_poderes, 0,wgui-165,hgui-115 + bg_opcao_space*i, bg_poderes_width/sprite_width, bg_poderes_height/sprite_height, 0, c_white,1) 
 		
 		//Desenhando os poderes
-		draw_sprite_ext(global.chosen_ones[i][2], 0, wgui-160, hgui-115+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
+		draw_sprite_ext(esclhd_Sprite, 0, wgui-160, hgui-115+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
 		
 		//draw_set_color(noone)
+		
 				
 		mx = device_mouse_x_to_gui(0) + camera_get_view_x(view_camera[0])
 		my = device_mouse_y_to_gui(0) + camera_get_view_y(view_camera[0])
@@ -62,22 +68,25 @@ if !surface_exists(paused_surf) {
 		//Desenhando o background das opções selecionadas
 	    draw_sprite_ext(spr_bg_menuOpcao, 1,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
 		//Desenhando o título dos poderes selecionados
-		msg = global.chosen_ones[i][0] 
-		draw_text_transformed(wgui-70, hgui-113 + bg_opcao_space*i , msg, 1,1,image_angle)	 
+		draw_text_transformed(wgui-70, hgui-113 + bg_opcao_space*i , esclhd_Nome, 1,1,image_angle)	 
 		//Desenhando a descrição dos poderes selecionados
-		msg = global.chosen_ones[i][1]
-		draw_text_transformed(wgui-70, hgui-80 + bg_opcao_space*i, msg, 1,1,image_angle) 
+		draw_text_transformed(wgui-70, hgui-80 + bg_opcao_space*i, esclhd_Descricao, 1,1,image_angle) 
 		//Desenha o nível selecionados
-		msg = "Nível: " + string(global.chosen_ones[i][3])
+		msg = "Nível: " + string(esclhd_Nivel)
 		draw_text_transformed(wgui+95, hgui-113+ bg_opcao_space*i, msg, 1,1,image_angle)
 		
 		//Desenhando o background dos poderes selecionados
 		draw_sprite_ext(spr_bg_poderes, 0,wgui-165,hgui-115 + bg_opcao_space*i, bg_poderes_width/sprite_width, bg_poderes_height/sprite_height, 0, c_white,1) 
 		
 		//Desenhando os poderes selecionados
-		draw_sprite_ext(global.chosen_ones[i][2], 0, wgui-160, hgui-115+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
+		draw_sprite_ext(esclhd_Sprite, 0, wgui-160, hgui-115+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
 			
 			if(mouse_check_button(mb_left)){
+				
+				//Adicionando items ao iventário
+                ds_list_add(global.inventario, esclhd_Nome, esclhd_Descricao, esclhd_Sprite,
+				esclhd_Nivel, esclhd_Nsei, esclhd_Id);
+				
 				
 				for(xx = 0;xx < array_length(global.powers);xx++){
 					if(global.powers[xx][0] == global.chosen_ones[i][0]){
@@ -101,4 +110,14 @@ if !surface_exists(paused_surf) {
 	draw_set_font(-1)
 	draw_set_color(noone)
     }
+	
 }
+//Funcionalidades do iventário
+global.countIventario = ds_list_size(global.inventario); //Tamanho do iventario
+
+/*Nota: A condição a baixo utiliza a função, PesquisqIventario, que 
+  pesquisa através do id do item se ele tá no iventário ou não,
+  se ele tiver, a flag dele ativada*/
+if(PesquisaIventario(1)!= -1) FlagBolaDeFogo = true; //Pesquisando a bola de fogo
+if(PesquisaIventario(2)!= -1) FlagMachado = true; //Pesquisando o machado
+if(PesquisaIventario(5)!= -1) FlagFaca = true; //Pesquisando a faca

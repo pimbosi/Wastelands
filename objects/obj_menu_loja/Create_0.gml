@@ -1,6 +1,9 @@
-paused = false;
-poderes_escolhidos = 0
-paused_surf = -1;
+//Controlando se o jogo está pausado ou não
+paused = false; //Jogo inicialmente não está pausado
+//Controle interno para verificar de a loja está aberta ou não
+lojaOpen = false; //Loja inicialmente fechado
+poderes_escolhidos = 0 //Quantidade de poderes escolhidos, inicialmente 0
+paused_surf = -1; 
 
 //Backgroud menu
 menu_width = 414 //Largura do menu
@@ -19,8 +22,15 @@ bg_poderes_height = 82 //Altura da sprite de fundo dos poderes
 poderes_width = 30 //Largura da sprite dos poderes
 poderes_height = 30 //Altura da sprite dos poderes
 
-op_border = 50 //Distância da borda até as letras
-op_space = 50 //Espaçamento entre as linhas
+//Controle do iventário
+globalvar FlagMachado; //Criando a Flag do machado
+FlagMachado = false; //FlagMachado desativada
+globalvar FlagBolaDeFogo; //Criando a Flag da bola de fogo
+FlagBolaDeFogo = false; //Flag da Bola de fogo desativada
+globalvar FlagFaca; //Criando a Flag da faca
+FlagFaca = false; //Flag da faca desativada
+
+
 
 //randomize()
 function array_get_value(searchArray, findValue){

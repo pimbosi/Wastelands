@@ -26,6 +26,8 @@ if _num > 0
 			if(_list[| i].inimigo_hp <= 0)
 			{
 				instance_destroy(_list[| i]);
+				//Dropando xp na layer do menu quando o personagem morre
+				instance_create_layer(x,y,"Menu",obj_xp);
 			}
 		}
 	}

@@ -1,4 +1,8 @@
-if keyboard_check_pressed(ord("P")){	
+if (loja){ //Se a variável global da loja estiver aberta (true)
+	lojaOpen = true; //A variavél interna de controle da loja é aberta (true)
+	loja = false;//A variável global da loja se torna fechada(false)
+}
+if (lojaOpen){//Se a variável interna de controle da loja estiver aberta(true), a loja abri
 
     screenShot = sprite_create_from_surface(application_surface,view_xview[0],view_yview[0],view_wview[0],view_hview[0],0,0,0,0)   
 	
@@ -21,12 +25,14 @@ if keyboard_check_pressed(ord("P")){
 		}
 		
 	}
+	tamanho = array_length(global.chosen_ones); 
 	
 	if(poderes_escolhidos < 3){
 		
 	}
 	
-    paused = !paused;
+    paused = !paused; //Jogo despausa
+	lojaOpen = !lojaOpen; //Loja fecha
 	
     if(paused == false){
         instance_activate_all();
@@ -34,6 +40,7 @@ if keyboard_check_pressed(ord("P")){
         paused_surf = -1;
     }
 }
+
 if paused == true{
     alarm[0]++;
     alarm[1]++;
