@@ -37,7 +37,7 @@
     {"id":{"name":"spr_bg_menuOpcao","path":"sprites/spr_bg_menuOpcao/spr_bg_menuOpcao.yy",},"order":3,},
     {"id":{"name":"spr_bg_menu","path":"sprites/spr_bg_menu/spr_bg_menu.yy",},"order":2,},
     {"id":{"name":"PesquisaIventario","path":"scripts/PesquisaIventario/PesquisaIventario.yy",},"order":0,},
-    {"id":{"name":"obj_iventario","path":"objects/obj_iventario/obj_iventario.yy",},"order":2,},
+    {"id":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},"order":2,},
     {"id":{"name":"obj_enemy_02","path":"objects/obj_enemy_02/obj_enemy_02.yy",},"order":1,},
     {"id":{"name":"Fase_01","path":"rooms/Fase_01/Fase_01.yy",},"order":0,},
   ],
@@ -89,6 +89,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.0.0.19",
+    "IDEVersion": "2022.11.1.56",
   },
 }

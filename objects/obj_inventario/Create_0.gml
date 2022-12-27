@@ -6,4 +6,3 @@ alturaPoder = 100;
 	
 
 
-

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_iventario",
+  "name": "obj_inventario",
   "spriteId": null,
   "solid": false,
   "visible": true,
