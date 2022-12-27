@@ -31,27 +31,22 @@ slot[3] = "faca"
 
 #endregion 
 
-global.inventario = ds_list_create();
+global.inventario = []
  //poderes
-//Ordem = 0 Nome, 1 Descricao, 2 sprite, 3 nível, 4..., 5 id
+//Ordem = 0 Nome, 1 Descricao, 2 sprite, 3 nível, 4...,
 global.powers = [
-	["Bola de fogo","Lança bolas fogo", spr_fireball, 0, 5, 1], 
+	["Bola de fogo","Lança bolas de fogo", spr_fireball, 0, 5], 
 	["Machado","Atira machados", spr_axe, 0, 5, 2], 
-	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5, 3],
-	["Bola de gelo", "Dano e atrasa os inimigos", spr_fireball, 0, 5, 4],
-	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5, 5],
-	["power 5","power 5 info", spr_fireball, 0, 5, 6],
-	["power 6","power 6 info", spr_melee, 0, 6, 7],
-	["power 7","power 7 info", spr_fireball, 0, 3, 8]  
+	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
+	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
+	["Bola de gelo", "Dano e atrasa os inimigos", spr_fireball, 0, 5],
+	["power 5","power 5 info", spr_fireball, 0, 5],
+	["power 6","power 6 info", spr_melee, 0, 6],
+	["power 7","power 7 info", spr_fireball, 0, 3]  
 		]
-array_push(global.powers, ["Power 8","P8", spr_fireball, 0,5, 9])
-
+array_push(global.powers, ["Power 8","P8", spr_fireball, 0,5])
 
 melee0 = 0;
-axe0 = 0;
-fire0 = 0;
-faca0 = 0;
-
 melee_up = 0;
 axe_up = 0;
 fireball_up = 0;
@@ -62,8 +57,5 @@ axe_dmg = 30;
 fireball_dmg = 15 + fireball_up;
 faca_dmg = 5 + faca_up;
 
-machadoAtivo = false;
-bolaDeFogoAtiva = false;
-facaAtiva = false;
 
 

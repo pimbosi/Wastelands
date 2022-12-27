@@ -33,8 +33,7 @@ if !surface_exists(paused_surf) {
 		var esclhd_Descricao = global.chosen_ones[i][1];
 		var esclhd_Sprite = global.chosen_ones[i][2];
 		var esclhd_Nivel = global.chosen_ones[i][3];
-		var esclhd_Nsei = global.chosen_ones[i][4];
-		var esclhd_Id = global.chosen_ones[i][5];
+		var esclhd_Nivel_Max = global.chosen_ones[i][4];
 		
 		//Desenhando o background das opções
 	    draw_sprite_ext(spr_bg_menuOpcao, 0,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
@@ -84,14 +83,19 @@ if !surface_exists(paused_surf) {
 			if(mouse_check_button(mb_left)){
 				
 				//Adicionando items ao iventário
-                ds_list_add(global.inventario, esclhd_Nome, esclhd_Descricao, esclhd_Sprite,
-				esclhd_Nivel, esclhd_Nsei, esclhd_Id);
+                //ds_list_add(global.inventario, esclhd_Nome, esclhd_Descricao, esclhd_Sprite,
+				//esclhd_Nivel, esclhd_Nsei);
 				
+				//adiciona esse poder ao inventario caso n tenha sido add antes
+				if(array_get_value(global.inventario, global.chosen_ones[i]) == -1 ){
+					array_push(global.inventario, global.chosen_ones[i])
+				}
 				
 				for(xx = 0;xx < array_length(global.powers);xx++){
 					if(global.powers[xx][0] == global.chosen_ones[i][0]){
 						global.powers[xx][3]++			
 					}
+					
 				}
 				
 				paused = !paused;
@@ -113,11 +117,13 @@ if !surface_exists(paused_surf) {
 	
 }
 //Funcionalidades do iventário
-global.countIventario = ds_list_size(global.inventario); //Tamanho do iventario
+//global.countIventario = ds_list_size(global.inventario); //Tamanho do iventario
 
 /*Nota: A condição a baixo utiliza a função, PesquisqIventario, que 
   pesquisa através do id do item se ele tá no iventário ou não,
   se ele tiver, a flag dele ativada*/
+ /* 
 if(PesquisaIventario(1)!= -1) FlagBolaDeFogo = true; //Pesquisando a bola de fogo
 if(PesquisaIventario(2)!= -1) FlagMachado = true; //Pesquisando o machado
 if(PesquisaIventario(5)!= -1) FlagFaca = true; //Pesquisando a faca
+*/
