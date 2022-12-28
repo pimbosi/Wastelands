@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_inventario",
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprBase",
+    "path": "sprites/sprBase/sprBase.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

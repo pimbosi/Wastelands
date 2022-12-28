@@ -1,8 +1,5 @@
-//#macro IventarioTamanho 9
-//rowLenght = 6; // número de items por linha
-rowLenght = 6; // número de items por linha
-LarguraPoder = 390;
-alturaPoder = 100;
-	
+rowLenght = 60; //Número de linhas do iventário
+largura_sprPoderes = 14;
+Altura_sprPoderes = 14;
 
 
