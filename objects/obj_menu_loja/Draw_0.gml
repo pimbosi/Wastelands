@@ -36,7 +36,7 @@ if !surface_exists(paused_surf) {
 		var esclhd_Nivel_Max = global.chosen_ones[i][4];
 		
 		//Desenhando o background das opções
-	    draw_sprite_ext(spr_bg_menuOpcao, 0,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
+	    draw_sprite_ext(spr_bg_menu_opcao, 0,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
 		//Desenhando o título dos poderes 
 		draw_text_transformed(wgui-70, hgui-113 + bg_opcao_space*i , esclhd_Nome, 1,1,image_angle)	 
 		//Desenhando a descrição dos poderes
@@ -65,7 +65,7 @@ if !surface_exists(paused_surf) {
 		if(point_in_rectangle(mx, my, x1, y1, x2, y2)){  		
 			
 		//Desenhando o background das opções selecionadas
-	    draw_sprite_ext(spr_bg_menuOpcao, 1,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
+	    draw_sprite_ext(spr_bg_menu_opcao, 1,wgui-175,hgui-125 + bg_opcao_space*i, bg_opcao_width/sprite_width, bg_opcao_height/sprite_height, 0, c_white,1) 
 		//Desenhando o título dos poderes selecionados
 		draw_text_transformed(wgui-70, hgui-113 + bg_opcao_space*i , esclhd_Nome, 1,1,image_angle)	 
 		//Desenhando a descrição dos poderes selecionados

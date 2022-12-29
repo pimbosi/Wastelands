@@ -24,13 +24,3 @@ poderes_height = 30 //Altura da sprite dos poderes
 
 
 //randomize()
-function array_get_value(searchArray, findValue){
-	i = 0
-	while(i < array_length(searchArray)){
-		if(searchArray[i] == findValue){
-			return i
-		}	
-		i++
-	}
-	return -1
-}

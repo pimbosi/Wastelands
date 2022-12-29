@@ -39,7 +39,7 @@ global.powers = [
 	["Machado","Atira machados", spr_axe, 0, 5, 2], 
 	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
 	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
-	["Bola de gelo", "Dano e atrasa os inimigos", spr_bolaDegelo, 0, 5],
+	["Bola de gelo", "Dano e atrasa os inimigos", spr_bola_de_gelo, 0, 5],
 	["power 5","power 5 info", spr_fireball, 0, 5],
 	["power 6","power 6 info", spr_melee, 0, 6],
 	["power 7","power 7 info", spr_fireball, 0, 3]  

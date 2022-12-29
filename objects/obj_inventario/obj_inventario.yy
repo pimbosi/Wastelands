@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_inventario",
   "spriteId": {
-    "name": "sprBase",
-    "path": "sprites/sprBase/sprBase.yy",
+    "name": "spr_base",
+    "path": "sprites/spr_base/spr_base.yy",
   },
   "solid": false,
   "visible": true,
