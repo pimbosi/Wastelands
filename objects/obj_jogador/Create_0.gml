@@ -57,6 +57,6 @@ axe_dmg = 30;
 fireball_dmg = 15 + fireball_up;
 faca_dmg = 5 + faca_up;
 
-collectRadius = 50;
+collectRadius = 50;  //Raio do círculo de coleta de xp
 
 
