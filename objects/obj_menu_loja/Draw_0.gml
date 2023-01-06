@@ -49,7 +49,7 @@ if !surface_exists(paused_surf) {
 		draw_sprite_ext(spr_bg_poderes, 0,wgui-165,hgui-115 + bg_opcao_space*i, bg_poderes_width/sprite_width, bg_poderes_height/sprite_height, 0, c_white,1) 
 		
 		//Desenhando os poderes
-		draw_sprite_ext(esclhd_Sprite, 0, wgui-160, hgui-115+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
+		draw_sprite_ext(esclhd_Sprite, 0, wgui-125, hgui-80+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
 		
 		//draw_set_color(noone)
 		
@@ -78,7 +78,7 @@ if !surface_exists(paused_surf) {
 		draw_sprite_ext(spr_bg_poderes, 0,wgui-165,hgui-115 + bg_opcao_space*i, bg_poderes_width/sprite_width, bg_poderes_height/sprite_height, 0, c_white,1) 
 		
 		//Desenhando os poderes selecionados
-		draw_sprite_ext(esclhd_Sprite, 0, wgui-160, hgui-115+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
+		draw_sprite_ext(esclhd_Sprite, 0, wgui-125, hgui-80+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
 			
 			if(mouse_check_button(mb_left)){
 				
