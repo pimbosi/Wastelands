@@ -14,8 +14,7 @@ maxXP = (30 + (lvl * 100) - 20);//Formula que calcula o número total de xp nece
 globalvar hp; //Vida do personagem principal
 hp = 40
 
-globalvar loja; //Variável que indica se a loja está aberta ou não
-loja = false; //Loja inicialmente fechada
+global.loja_compras_finalizadas = 0
 
 timer_xp = 20;
 alarm[0] = timer_xp;

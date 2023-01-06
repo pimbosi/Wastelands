@@ -105,6 +105,18 @@ if !surface_exists(paused_surf) {
 			        surface_free(paused_surf);
 			        paused_surf = -1;
 			    }
+				
+				global.loja_compras_finalizadas += 1
+				
+				display_mouse_set(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) );
+				
+				
+				if(global.loja_compras_finalizadas < global.lvl-1){
+					
+					instance_create_layer(x,y,Fase_01,obj_menu_loja)
+				} 				
+				
+			
 			}
 		}
 							
@@ -116,14 +128,3 @@ if !surface_exists(paused_surf) {
     }
 	
 }
-//Funcionalidades do iventário
-//global.countIventario = ds_list_size(global.inventario); //Tamanho do iventario
-
-/*Nota: A condição a baixo utiliza a função, PesquisqIventario, que 
-  pesquisa através do id do item se ele tá no iventário ou não,
-  se ele tiver, a flag dele ativada*/
- /* 
-if(PesquisaIventario(1)!= -1) FlagBolaDeFogo = true; //Pesquisando a bola de fogo
-if(PesquisaIventario(2)!= -1) FlagMachado = true; //Pesquisando o machado
-if(PesquisaIventario(5)!= -1) FlagFaca = true; //Pesquisando a faca
-*/
