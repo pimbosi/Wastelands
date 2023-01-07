@@ -26,7 +26,6 @@ screenShot = sprite_create_from_surface(application_surface,view_xview[0],view_y
 	
 global.chosen_ones = []
 escolhidos = []
-poderes_escolhidos = 0
 
 while(poderes_escolhidos < 3 && array_length(escolhidos) < array_length(global.powers)){
 		
