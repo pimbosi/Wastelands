@@ -19,6 +19,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Menu","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E50C284","properties":[],"isDnd":false,"objectId":{"name":"obj_menu_pause","path":"objects/obj_menu_pause/obj_menu_pause.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_449A65D8","properties":[],"isDnd":false,"objectId":{"name":"obj_game_status","path":"objects/obj_game_status/obj_game_status.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5DB86346","properties":[],"isDnd":false,"objectId":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":96.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21851269","properties":[],"isDnd":false,"objectId":{"name":"obj_jogador","path":"objects/obj_jogador/obj_jogador.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":480.0,},
@@ -48,6 +49,7 @@
     {"name":"inst_55163DAC","path":"rooms/Fase_01/Fase_01.yy",},
     {"name":"inst_1E50C284","path":"rooms/Fase_01/Fase_01.yy",},
     {"name":"inst_449A65D8","path":"rooms/Fase_01/Fase_01.yy",},
+    {"name":"inst_5DB86346","path":"rooms/Fase_01/Fase_01.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
