@@ -1,19 +1,26 @@
-/// @description Faca
-
-if (global.powers[3][3] > 0)
-{
-	alarmtime[3] = 100;	
+/// @description Intervalo atks da Faca
+if(global.powers[2][3] > 0){ //Se a flag tiver ativa o poder é acionado
 	
-	switch(faca_dmg)
+	alarmtime[3] = 150;
+	
+	//switch para controlar os atributos dos poderes a depender do nivel
+	switch(global.powers[2][4])
 	{
-		case faca_dmg : 
-			event_user(3);			
-		break;
-	
-		default:
-		break;	
+		//poder no nivel 1
+		case 1: 
+		
+			break;
+		
+		//poder no nivel 2
+		case 2: 
+		
+			break;
+		//poder no nivel 3
+		case 3: 
+		
+			break;
 	}
+	event_user(3);
 }
 
 alarm[3] = alarmtime[3];
-

@@ -1,22 +1,27 @@
-///@description Bola de Fogo
+///@descr Intervaloatks bola de fogo
+if (global.powers[0][3] > 0){ //Se a flag tiver ativa o poder é acionado
 
-if(global.powers[0][3] > 0)
-{
 	alarmtime[2] = 150;
-		
-	switch(fireball_dmg)
+
+	//switch para controlar os atributos dos poderes a depender do nivel
+	switch(global.powers[0][4])
 	{
-		case fireball_dmg : 
-			event_user(1);			
-		break;
+		//poder no nivel 1
+		case 1: 
+		
+			break;
+		
+		//poder no nivel 2
+		case 2: 
+		
+			break;
+		//poder no nivel 3
+		case 3: 
+		
+			break;
+	}
 
-		default:
-		break;	
-	}	
+	event_user(2);
 }
-
 alarm[2] = alarmtime[2];
-
-
-
 

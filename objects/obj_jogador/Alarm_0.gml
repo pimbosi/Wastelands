@@ -1,29 +1,28 @@
-/// @description Melee
+///@description Intervalo atks melee
 
-//switch pra já iniciar com o melee
-switch(melee_dmg)
+for(var i = 1; i < 10; i++)
 {
-	case melee_dmg : 
-		event_user(0);			
-	break;
-		
-	default:
-	break;
+	
+	if (keyboard_check(vk_space))
+	{
+		melee_up = i/10 * melee_dmg;
+		//melee_dmg += melee_up;
+		alarmtime[0] = 120 - (i*10);
+	}
 }
 
-	//upar o atk melee
-	if(global.powers[2][3] > 0)
-	{
-		switch(melee_dmg)
-		{	
-			case melee_dmg : 
-				event_user(0);			
-			break;
+switch(melee0)
+{
+	case melee0 : 
+		event_user(0);			
+	break;
 	
-			default:
-			break
-		}
-	}
+	default:
+	break;
+	
+}
+
+
 
 alarm[0] = alarmtime[0];
 
