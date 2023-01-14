@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_menu_pause",
   "spriteId": {
-    "name": "spr_bg_menu_pause",
-    "path": "sprites/spr_bg_menu_pause/spr_bg_menu_pause.yy",
+    "name": "spr_bg_menu",
+    "path": "sprites/spr_bg_menu/spr_bg_menu.yy",
   },
   "solid": false,
   "visible": true,

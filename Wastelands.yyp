@@ -23,6 +23,7 @@
     {"id":{"name":"spr_crosshair","path":"sprites/spr_crosshair/spr_crosshair.yy",},"order":0,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":1,},
     {"id":{"name":"spr_atk1","path":"sprites/spr_atk1/spr_atk1.yy",},"order":0,},
+    {"id":{"name":"spr_waste_lands","path":"sprites/spr_waste_lands/spr_waste_lands.yy",},"order":11,},
     {"id":{"name":"spr_font_menu_loja","path":"sprites/spr_font_menu_loja/spr_font_menu_loja.yy",},"order":10,},
     {"id":{"name":"obj_menu_inicial","path":"objects/obj_menu_inicial/obj_menu_inicial.yy",},"order":4,},
     {"id":{"name":"spr_atk2","path":"sprites/spr_atk2/spr_atk2.yy",},"order":2,},
@@ -105,6 +106,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.11.1.56",
+    "IDEVersion": "2022.0.0.19",
   },
 }

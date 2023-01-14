@@ -75,7 +75,7 @@ if !surface_exists(paused_surf) {
 		draw_text_transformed(wgui+95, hgui-113+ bg_opcao_space*i, msg, 1,1,image_angle)
 		
 		//Desenhando o background dos poderes selecionados
-		draw_sprite_ext(spr_bg_poderes, 0,wgui-165,hgui-115 + bg_opcao_space*i, bg_poderes_width/sprite_width, bg_poderes_height/sprite_height, 0, c_white,1) 
+		draw_sprite_ext(spr_bg_poderes, 1,wgui-165,hgui-115 + bg_opcao_space*i, bg_poderes_width/sprite_width, bg_poderes_height/sprite_height, 0, c_white,1) 
 		
 		//Desenhando os poderes selecionados
 		draw_sprite_ext(esclhd_Sprite, 0, wgui-125, hgui-80+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
