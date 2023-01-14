@@ -1,7 +1,6 @@
 boost_walk = lvl*0.5;
 
 
-
 #region movimentação
 
 //andar com setinhas e com wasd

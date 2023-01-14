@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "others",
-    "path": "folders/Objects/others.yy",
+    "name": "HUD",
+    "path": "folders/Objects/HUD.yy",
   },
 }

@@ -3,6 +3,7 @@
 
 event_inherited();
 
+boss_hp = 150
 
 spr = spr_boss
 sprW = spr_bossW

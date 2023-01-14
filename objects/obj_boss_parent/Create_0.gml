@@ -1,11 +1,13 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description variaveis boss
 
-estado = scr_boss_escolher_ataque;
+#region ataques do boss
 
+estado = scr_boss_escolher_ataque; //seleciona o script dos atks
 
-ataque_boss = 3;
+ataque_boss = 3; 
 ataque2_boss = 2;
+
+#endregion
 
 #region movimentacao
 
@@ -17,12 +19,5 @@ alarm[0] = alarmtime;
 
 #endregion
 
-#region vida e troca de spr
-	
-	boss2_hp = 1500; 
 
-	spr = spr_boss_2;
-	sprW = spr_boss_2w;	
-	
-#endregion
 
