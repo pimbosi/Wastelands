@@ -41,6 +41,7 @@
     {"id":{"name":"obj_xp","path":"objects/obj_xp/obj_xp.yy",},"order":1,},
     {"id":{"name":"spr_atk21","path":"sprites/spr_atk21/spr_atk21.yy",},"order":1,},
     {"id":{"name":"spr_enemy_01","path":"sprites/spr_enemy_01/spr_enemy_01.yy",},"order":0,},
+    {"id":{"name":"Sprite30","path":"sprites/Sprite30/Sprite30.yy",},"order":3,},
     {"id":{"name":"obj_atk1","path":"objects/obj_atk1/obj_atk1.yy",},"order":0,},
     {"id":{"name":"spr_bg_opcoes","path":"sprites/spr_bg_opcoes/spr_bg_opcoes.yy",},"order":6,},
     {"id":{"name":"obj_jogador","path":"objects/obj_jogador/obj_jogador.yy",},"order":0,},
