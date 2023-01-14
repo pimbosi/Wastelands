@@ -35,7 +35,7 @@ if _num > 0
 	}
 }
 
-//dano no boss 2
+//dano nos bosses
 
 ds_list_destroy(_list);
 
@@ -60,10 +60,9 @@ if _num > 0
 			_list[| i].sprite_index = _list[| i].sprW;
 					
 				//dano sofrido
-				_list[| i].boss2_hp -= dmg; 	
-		
+				_list[| i].boss_hp -= dmg; 	
 			
-			if(_list[| i].boss2_hp <= 0)
+			if(_list[| i].boss_hp <= 0)
 			{
 				//destruir entidade
 				instance_destroy(_list[| i]);

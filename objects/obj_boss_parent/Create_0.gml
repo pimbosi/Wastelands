@@ -17,12 +17,4 @@ alarm[0] = alarmtime;
 
 #endregion
 
-#region vida e troca de spr
-	
-	boss2_hp = 100; 
-
-	spr = spr_boss_2;
-	sprW = spr_boss_2w;	
-	
-#endregion
 
