@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description barra de vida
 // You can write your code in this editor
 
 //Desenhando a barra de vida
