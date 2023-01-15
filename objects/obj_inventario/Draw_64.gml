@@ -9,7 +9,7 @@ y3 = 60
 
 for(xx = 0; xx < array_length(global.inventario);xx++){	
 	
-	draw_sprite_ext(spr_bg_poderes,image_index, x-xc, y+y3, 39/sprite_width, 39/sprite_height, 0, c_white,1);
+	draw_sprite_ext(spr_bg_poderes,2, x-xc, y+y3, 39/sprite_width, 39/sprite_height, 0, c_white,1);
 	
 	sprite = global.inventario[xx][2];
 	draw_sprite_ext(sprite, 0, x-xd, y+y2, largura_sprPoderes/sprite_width, Altura_sprPoderes/sprite_height, 0, c_white,1);
