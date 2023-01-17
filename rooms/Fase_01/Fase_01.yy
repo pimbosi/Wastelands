@@ -48,6 +48,7 @@
     {"name":"inst_4413B599","path":"rooms/Fase_01/Fase_01.yy",},
     {"name":"boss_life","path":"rooms/Fase_01/Fase_01.yy",},
     {"name":"inst_52A86605","path":"rooms/Fase_01/Fase_01.yy",},
+    {"name":"inst_5D37447E","path":"rooms/Fase_01/Fase_01.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

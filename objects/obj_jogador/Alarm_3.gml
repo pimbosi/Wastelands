@@ -4,7 +4,7 @@ if(global.powers[2][3] > 0){ //Se a flag tiver ativa o poder é acionado
 	alarmtime[3] = 150;
 	
 	//switch para controlar os atributos dos poderes a depender do nivel
-	switch(global.powers[2][4])
+	switch(global.powers[2][3])
 	{
 		//poder no nivel 1
 		case 1: 
