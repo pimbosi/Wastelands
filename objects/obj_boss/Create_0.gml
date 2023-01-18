@@ -3,7 +3,7 @@
 
 event_inherited();
 
-boss_hp = 150
+boss_hp = 300 //quando alterado, deverá alterar tbm no obj_boss_life
 
 spr = spr_boss
 sprW = spr_bossW

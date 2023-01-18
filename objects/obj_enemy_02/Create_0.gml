@@ -3,7 +3,7 @@
 
 event_inherited();
 
-inimigo_hp = 10;
+inimigo_hp = 100;
 
 spr = spr_enemy_02;
 sprW = spr_whiteenemy_02;
