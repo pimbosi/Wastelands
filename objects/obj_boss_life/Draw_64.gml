@@ -22,6 +22,6 @@ if instance_exists(obj_boss) //a vida só aparece se o boss existir
 	var _sprl = sprite_get_width(spr_boss_life_hud) * 3; //sprite hud da vida
 	
 	draw_sprite_ext(spr_boss_life_hud, 0, _gl/2 - _sprl/2, 100, 3, 3, 0, c_white, 1); //desenha o hud da vida centralizado
-	draw_sprite_ext(spr_boss_life, 0, _gl/2 - _sprl/2 + 6, 100, obj_boss.boss_hp/150 * 3 , 3, 0, c_white, 1); //desenha a vida dentro do hud (a divisão é feita pela vida total do boss)
+	draw_sprite_ext(spr_boss_life, 0, _gl/2 - _sprl/2 + 6, 100, obj_boss.boss_hp/300 * 3 , 3, 0, c_white, 1); //desenha a vida dentro do hud (a divisão é feita pela vida total do boss)
 	
 }
