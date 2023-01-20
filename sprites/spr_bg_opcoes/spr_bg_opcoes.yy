@@ -28,7 +28,7 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2fab4125-63f0-465a-94fa-4a57ca0a5b16",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ee76c5e-592c-4f23-82c3-98dca6779b4e",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6d41e0aa-5f36-4467-acca-769290b616f1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fab4125-63f0-465a-94fa-4a57ca0a5b16","path":"sprites/spr_bg_opcoes/spr_bg_opcoes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"404fcd1f-db56-4823-afe0-81a169b32948","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ee76c5e-592c-4f23-82c3-98dca6779b4e","path":"sprites/spr_bg_opcoes/spr_bg_opcoes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -67,10 +67,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c7a3b6bf-acfe-439a-a34a-b1324174b845","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": {
-    "left": 3,
-    "top": 3,
-    "right": 3,
-    "bottom": 3,
+    "left": 6,
+    "top": 6,
+    "right": 6,
+    "bottom": 6,
     "guideColour": [
       4294902015,
       4294902015,

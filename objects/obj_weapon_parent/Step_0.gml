@@ -3,9 +3,9 @@
 var _list = ds_list_create();
 var _num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_enemy_parent, false, true, _list, false);
 
-
 if _num > 0
 {
+	
     for (var i = 0; i < _num; ++i;)
     {
 		if(_list[| i].sprite_index == _list[| i].spr)
@@ -21,9 +21,9 @@ if _num > 0
 			_list[| i].sprite_index = _list[| i].sprW;
 					
 				//dano sofrido
-				_list[| i].inimigo_hp -= dmg; 	
-		
+				_list[| i].inimigo_hp -= dmg; 				
 			
+				
 			if(_list[| i].inimigo_hp <= 0)
 			{
 				//destruir entidade

@@ -1,26 +1,38 @@
 ///@description Intervalo atks melee
 
-for(var i = 1; i < 10; i++)
-{
-	
-	if (keyboard_check(vk_space))
+switch(global.powers[3][3])
 	{
-		melee_up = i/10 * melee_dmg;
-		//melee_dmg += melee_up;
-		alarmtime[0] = 120 - (i*10);
+		//poder no nivel 1
+		case 1: 
+			
+			melee_dmg += 0.2
+			alarmtime[0] -= 20
+			
+			break;
+		
+		//poder no nivel 2
+		case 2: 
+			
+			melee_dmg += 0.2
+			alarmtime[0] -= 20
+			
+			break;
+		//poder no nivel 3
+		case 3: 
+			
+			melee_dmg += 0.2
+			alarmtime[0] -= 25
+			
+			break;
+		case 4:
+			
+			melee_dmg += 2
+			alarmtime[0] -= 25
+		
+		break;						
 	}
-}
-
-switch(melee0)
-{
-	case melee0 : 
-		event_user(0);			
-	break;
 	
-	default:
-	break;
-	
-}
+event_user(0);			
 
 
 
