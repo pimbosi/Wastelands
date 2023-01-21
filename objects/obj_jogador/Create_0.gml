@@ -24,6 +24,10 @@ alarm[2] = alarmtime[2]; //bola de fogo
 
 alarm[3] = alarmtime[3]; //facas
 
+weapon_cooldown[4] = 2;
+
+alarm[4] = weapon_cooldown[0];
+
 slot[0] = "melee";
 slot[1] = "axe";
 slot[2] = "fireball";
@@ -47,6 +51,6 @@ axe_dmg = 4;
 fireball_dmg = 3;
 faca_dmg = 2;
 
+weapon_cooldown[0] = 2;
+
 collectRadius = 50;  //Raio do círculo de coleta de xp
-
-
