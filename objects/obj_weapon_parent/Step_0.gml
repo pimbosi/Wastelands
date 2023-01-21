@@ -68,6 +68,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 					
 				//dano sofrido
 				_list[| i].boss_hp -= dmg; 	
+				
 				obj_jogador.weapon_cooldown[4] -= 1;
 				
 				if obj_jogador.weapon_cooldown[4] == 0
