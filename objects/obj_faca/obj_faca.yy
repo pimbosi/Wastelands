@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_faca",
   "spriteId": {
-    "name": "spr_faca",
-    "path": "sprites/spr_faca/spr_faca.yy",
+    "name": "spr_facaAnimada",
+    "path": "sprites/spr_facaAnimada/spr_facaAnimada.yy",
   },
   "solid": false,
   "visible": true,
