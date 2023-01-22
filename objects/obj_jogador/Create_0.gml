@@ -1,9 +1,13 @@
 #region variaveis movimentacao
 //andar
 
-walkspeed = 10;
+walkspeed = 2;
 //teste
 #endregion
+
+//variaveis para a colisão com o mapa
+
+tilemap = layer_tilemap_get_id("Collision")
 
 #region intervalo dos atks
 //intervalo dos atks
