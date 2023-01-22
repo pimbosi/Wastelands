@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_torre_1",
+  "name": "obj_boss1",
   "spriteId": {
-    "name": "spr_torre_1",
-    "path": "sprites/spr_torre_1/spr_torre_1.yy",
+    "name": "spr_boss1",
+    "path": "sprites/spr_boss1/spr_boss1.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

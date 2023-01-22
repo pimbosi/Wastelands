@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_torre_1",
+  "name": "obj_spell_boss1",
   "spriteId": {
-    "name": "spr_torre_1",
-    "path": "sprites/spr_torre_1/spr_torre_1.yy",
+    "name": "spr_spell_boss1",
+    "path": "sprites/spr_spell_boss1/spr_spell_boss1.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -27,6 +27,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_jogador","path":"objects/obj_jogador/obj_jogador.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
