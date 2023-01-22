@@ -1,9 +1,13 @@
 #region variaveis movimentacao
 //andar
 
-walkspeed = 3;
+walkspeed = 2;
 //teste
 #endregion
+
+//variaveis para a colisão com o mapa
+
+tilemap = layer_tilemap_get_id("Collision")
 
 #region intervalo dos atks
 //intervalo dos atks
@@ -54,3 +58,7 @@ faca_dmg = 2;
 weapon_cooldown[0] = 2;
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
+
+hitpoints = 20    // hp do personagem
+
+
