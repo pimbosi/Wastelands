@@ -23,6 +23,9 @@ if !surface_exists(paused_surf) {
 		//Pegando o último frame do jogo
 		draw_sprite(screenShot,0,camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]))
 		
+		//Desenhando a máscara preta atrás do menu 
+	    draw_sprite_ext(spr_black_mask, 1, wgui+4, hgui+3, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
+		
 		draw_set_color(c_black); //Setando uma cor pra ser utilizada (Preto)
 		/*draw_set_alpha(.7); //Opacidade do fundo
 		draw_rectangle(0,0,w_gui,h_gui,false); //Desenhando um retangulo de fundo quando pausado o jogo
