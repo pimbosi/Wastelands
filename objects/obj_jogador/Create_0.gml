@@ -57,8 +57,7 @@ faca_dmg = 2;
 
 weapon_cooldown[0] = 2;
 
+repeticao_axe = 1
+
 collectRadius = 50;  //Raio do círculo de coleta de xp
-
-hitpoints = 20    // hp do personagem
-
 
