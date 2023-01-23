@@ -10,3 +10,10 @@ sprW = spr_boss_3W;
 alarm_atk[1] = 120;
 
 alarm[1] = alarm_atk[1];
+
+alarm_atk[3] = 20;
+
+alarm[3] = alarm_atk[3];
+
+range = 50;
+esta_perto = false;
