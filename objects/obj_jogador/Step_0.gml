@@ -1,4 +1,4 @@
-boost_walk = lvl*0.5;
+//boost_walk = lvl*0.5;
 
 
 #region movimentação
@@ -23,7 +23,7 @@ if (tilemap_get_at_pixel(tilemap,bbox_side+horizontal,bbox_top) != 0) || (tilema
 	horizontal = 0;
 }
 
-x += horizontal*walkspeed*boost_walk
+x += horizontal*walkspeed//*boost_walk
 
 //colisão vertical com o mapa
 if (vertical>0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
@@ -33,7 +33,7 @@ if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vertical) != 0) || (tilemap
 	else y = y - (y mod 32) - (bbox_top - y);
 	vertical = 0;
 }
-y += vertical*walkspeed*boost_walk
+y += vertical*walkspeed//*boost_walk
 
  if (horizontal>0){image_xscale = 1}
  if (horizontal<0){image_xscale = -1}

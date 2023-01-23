@@ -50,15 +50,16 @@ global.powers = [
 	["Bola de gelo", "Dano e atrasa os inimigos", spr_bola_de_gelo, 0, 5],
 	]
 
-melee_dmg = 1;
-axe_dmg = 4;
-fireball_dmg = 3;
-faca_dmg = 2;
+melee_dmg = 4;
+axe_dmg = 8;
+fireball_dmg = 6;
+faca_dmg = 5;
 
 weapon_cooldown[0] = 2;
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
 
 hitpoints = 20    // hp do personagem
+
 
 
