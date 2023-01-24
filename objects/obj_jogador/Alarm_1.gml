@@ -18,7 +18,7 @@ if(global.powers[1][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		//poder no nivel 2
 		case 2:  //caso o lvl seja 2 então...
 			
-			axe_dmg += 1;
+			axe_dmg += 1.5;
 			alarmtime[1] -= 5
 			//ex: axe_vel = 20
 			
@@ -26,13 +26,13 @@ if(global.powers[1][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		//poder no nivel 3
 		case 3: //caso o lvl seja 3 então...
 		
-			axe_dmg += 0.25;
+			axe_dmg += 1.75;
 			alarmtime[1] -= 5
 		
 			break;
 		case 4:
 			
-			axe_dmg += 0.75;
+			axe_dmg += 2.25;
 			alarmtime[1] -= 5
 		
 			break;
