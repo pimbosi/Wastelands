@@ -9,4 +9,9 @@ sprW = spr_boss_3W;
 
 alarm_atk[1] = 120;
 
+alarm_atk[2] = 450;
+
 alarm[1] = alarm_atk[1];
+
+alarm[2] = alarm_atk[2];
+
