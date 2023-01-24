@@ -13,6 +13,10 @@ bg_opcao_space = 50 //Espaçamento entre as sprites das opções
 selecionado_width = 25; //Largura da sprite do indicador de selecionado
 selecionado_height = 25; //Altura da sprite do indicador de selecionado
 
+//Black mask
+blck_width = 530 //Largura da sprite
+blck_height = 350 //Altura da sprite
+
 opcoes = ["Configurações","Voltar ao jogo","Desistir"];
 index = 0;
 op_max = array_length(opcoes);
