@@ -52,6 +52,7 @@ if !surface_exists(paused_surf) {
 							instance_activate_all();
 							surface_free(paused_surf);
 							paused_surf = -1;
+							audio_group_load(sfx_audiogroup);
 						}
 					}
 					
