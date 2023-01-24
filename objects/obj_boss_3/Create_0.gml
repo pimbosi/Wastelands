@@ -17,3 +17,9 @@ alarm[3] = alarm_atk[3];
 
 range = 50;
 esta_perto = false;
+alarm_atk[2] = 450;
+
+alarm[1] = alarm_atk[1];
+
+alarm[2] = alarm_atk[2];
+

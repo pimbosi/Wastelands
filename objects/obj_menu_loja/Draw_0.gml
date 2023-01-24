@@ -17,16 +17,22 @@ if !surface_exists(paused_surf) {
 	hgui = camera_get_view_y(view_camera[0]) + display_get_gui_height()/2 
 	//Pegando o último frame do jogo
 	draw_sprite(screenShot,0,camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]))
-    //Desenhando o background do menu
+    
+	//Desenhando a máscara preta atrás do menu 
+	draw_sprite_ext(spr_black_mask, 1, wgui+4, hgui+3, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
+	
+	//Desenhando o background do menu
 	draw_sprite_ext(sprite_index, image_index, wgui-200, hgui-225,menu_width/sprite_width, menu_height/sprite_height, 0, c_white,1)
-   
-   
+      
 	draw_set_font(f_tn)  //Setando a fonte que sera utilizada pra escrever as opções
 	draw_set_color(c_black) //Setando a cor da fonte para preto
 	msg = "Suba de nível" //Desenha o título do menu
 	draw_text_transformed(wgui-75, hgui-175, msg, 1.5,1.5,image_angle)
     
-   
+	draw_sprite_ext(spr_xp_hud, image_index, wgui-550, hgui-367, 8.6, 0.8, 0, c_white,1)//desenha a hud do xp
+	draw_sprite_ext(spr_xp_hud_full, 0, wgui-547, hgui-363.5, 8.97, 0.8, 0, c_white,1)//desenhando a hud do xp inteiro
+	
+	
 	for(var i = 0; i < poderes_escolhidos;i++){	
 		
 		var esclhd_Nome = global.chosen_ones[i][0];
@@ -80,7 +86,12 @@ if !surface_exists(paused_surf) {
 		//Desenhando os poderes selecionados
 		draw_sprite_ext(esclhd_Sprite, 0, wgui-125, hgui-80+ bg_opcao_space*i, poderes_width/sprite_width, poderes_height/sprite_height, 0, c_white,1)
 			
-			if(mouse_check_button(mb_left)){
+		//Desenhando a seta (esquerda) apontada pro item selecionado
+		draw_sprite_ext(spr_seta, image_index,wgui-220,hgui-102 + bg_opcao_space*i, setas_width/sprite_width, setas_height/sprite_height, 0, c_white,1)
+		//Desenhando a seta (direita) apontada pro item selecionado
+		draw_sprite_ext(spr_seta, image_index,wgui+233,hgui-61 + bg_opcao_space*i, setas_width/sprite_width, setas_height/sprite_height, 180, c_white,1)
+		
+		if(mouse_check_button(mb_left)){
 				
 				//Adicionando items ao iventário
                 //ds_list_add(global.inventario, esclhd_Nome, esclhd_Descricao, esclhd_Sprite,
