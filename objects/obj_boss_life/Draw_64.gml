@@ -1,10 +1,12 @@
 /// @description desenha a vida dos boss
 
+
+
 //VIDA DO BOSS 2
 
 var _gl = display_get_gui_width(); //pegar largura da janela
 
-if instance_exists(obj_boss_2) //a vida só aparece se o boss 2 existir
+if instance_exists(obj_boss_2)//a vida só aparece se o boss 2 existir
 {
 	var _sprl = sprite_get_width(spr_boss2_life_hud) * 3; //sprite hud da vida
 	
