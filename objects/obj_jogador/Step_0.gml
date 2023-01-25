@@ -18,7 +18,7 @@ if (down = true) or (up = true) or (right = true) or (left = true){
 }
 else{
 	boost_walk = 0;
-	sprite_index = spr_jogadorAlfha
+	sprite_index = spr_jogador_parado
 }
 
 var horizontal = (right - left)
