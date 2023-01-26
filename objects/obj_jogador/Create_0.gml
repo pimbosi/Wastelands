@@ -57,11 +57,17 @@ axe_dmg = 8;
 fireball_dmg = 6;
 faca_dmg = 5;
 
+
 repeticao_axe = 1
+repeticao_axe = 1;
+repeticao_fireball = 1;
+repeticao_faca = 1;
+repeticao_melee = 1;
+
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
 
-hitpoints = 20    // hp do personagem
+//hitpoints = 20    // hp do personagem
 
 
 
