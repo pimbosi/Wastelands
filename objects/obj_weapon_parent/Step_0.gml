@@ -1,7 +1,7 @@
 ///@description colisão da arma com inimigo
 
-var _list = ds_list_create();
-var _num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_enemy_parent, false, true, _list, false);
+var _list = ds_list_create(); //criar lista
+var _num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_enemy_parent, false, true, _list, false); //criar retangulo de colisão
 
 if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 {
@@ -27,7 +27,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if obj_jogador.weapon_cooldown[4] == 0
 				{
 					instance_destroy();
-					obj_jogador.weapon_cooldown[4] = 2;
+					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
 				}
 			
 				
@@ -43,6 +43,8 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 }
 
 ds_list_destroy(_list);
+
+//CHEFES
 
 //dano nos chefes
 
@@ -73,7 +75,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if obj_jogador.weapon_cooldown[4] == 0
 				{
 					instance_destroy();
-					obj_jogador.weapon_cooldown[4] = 2;
+					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
 				}
 			
 			if(_list[| i].boss_hp <= 0)
@@ -81,13 +83,30 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				//destruir entidade
 				instance_destroy(_list[| i]);
 				//Dropando xp na layer do menu quando o personagem morre				
-				instance_create_layer(x,y,"Menu",obj_xp2);
+				room_goto_next();
 			}
 		}
 	}
 }
 
 ds_list_destroy(_list);
+
+//TORRES
+
+//checar qual torre existe para definir o boss q vai spawnar
+
+if instance_exists(obj_torre_1)
+{
+	boss_check = obj_boss;
+}
+else if instance_exists(obj_torre_2)
+{
+	boss_check = obj_boss_2;
+}
+else if instance_exists(obj_torre_3)
+{
+	boss_check = obj_boss_3;
+}
 
 //dano nas torres
 
@@ -112,15 +131,16 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if obj_jogador.weapon_cooldown[4] == 0
 				{
 					instance_destroy();
-					obj_jogador.weapon_cooldown[4] = 2;
+					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
 				}
 							
 			if (_list[| i].torre_hp <= 0)
 			{
 				//destruir entidade
 				instance_destroy(_list[| i]);
+				
 				//Spawnando boss após a torre ser destuída
-				instance_create_layer(x,y,"Instances",obj_boss_3);
+				instance_create_layer(x,y,"Instances", boss_check);
 			}
 		}
 	}

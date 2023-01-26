@@ -15,4 +15,4 @@ alarm[0] = alarmtime;
 	sprW = spr_whiteenemy_01;	
 #endregion
 
-
+tilemap = layer_tilemap_get_id("Collision")

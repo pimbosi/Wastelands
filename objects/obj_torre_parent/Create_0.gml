@@ -12,4 +12,7 @@ sprW = spr_torre_1w;
 	
 #endregion
 
+range = 100; //distância mínima para a vida aparecer
+esta_perto = false; //checar se está perto
+
 
