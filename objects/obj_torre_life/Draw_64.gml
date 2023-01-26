@@ -5,7 +5,7 @@
 
 var _gl = display_get_gui_width(); //pegar largura da janela
 
-if (instance_exists(obj_torre_1)) && (obj_torre_1.esta_perto == true)  //a vida só aparece se a torre existir e se o jogador estiver perto o suficiente
+if (instance_exists(obj_torre_1)) && (obj_torre_parent.esta_perto == true)  //a vida só aparece se a torre existir e se o jogador estiver perto o suficiente
 {
 	var _sprl = sprite_get_width(spr_life_hud) * 3; //sprite hud da vida
 	

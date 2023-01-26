@@ -28,9 +28,9 @@ alarm[2] = alarmtime[2]; //bola de fogo
 
 alarm[3] = alarmtime[3]; //facas
 
-weapon_cooldown[4] = 2;
+weapon_cooldown[4] = 3;
 
-alarm[4] = weapon_cooldown[0];
+alarm[4] = weapon_cooldown[4];
 
 slot[0] = "melee";
 slot[1] = "axe";
