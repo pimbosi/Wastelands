@@ -1,15 +1,5 @@
 /// @description spawn dos inimigos fora da tela
 
-//destruir todos os inimigos e parar o spawn
-
-if keyboard_check(vk_alt) && keyboard_check(vk_shift)
-{
-	alarm[0] = 1000000;
-	alarm[1] = 1000000;
-	alarm[2] = 1000000;
-	instance_destroy(obj_enemy_parent);
-}
-
 //spawn inimigo 1
 
 var _side=irandom(1)

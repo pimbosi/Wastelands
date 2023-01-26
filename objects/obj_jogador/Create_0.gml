@@ -28,9 +28,11 @@ alarm[2] = alarmtime[2]; //bola de fogo
 
 alarm[3] = alarmtime[3]; //facas
 
-weapon_cooldown[4] = 2;
+cooldown = 3;
 
-alarm[4] = weapon_cooldown[0];
+weapon_cooldown[4] = cooldown;
+
+alarm[4] = weapon_cooldown[4];
 
 slot[0] = "melee";
 slot[1] = "axe";
@@ -55,13 +57,17 @@ axe_dmg = 8;
 fireball_dmg = 6;
 faca_dmg = 5;
 
-weapon_cooldown[0] = 2;
 
 repeticao_axe = 1
+repeticao_axe = 1;
+repeticao_fireball = 1;
+repeticao_faca = 1;
+repeticao_melee = 1;
+
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
 
-hitpoints = 20    // hp do personagem
+//hitpoints = 20    // hp do personagem
 
 
 
