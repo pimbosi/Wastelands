@@ -9,31 +9,36 @@ if(global.powers[1][3] >= 0){
 			//poder no nivel 1
 			case 1: 
 			
-				melee_dmg += 1
-				alarmtime[0] -= 20
+				melee_dmg = 5
+				alarmtime[0] = 100
 			
 				break;
 		
 			//poder no nivel 2
 			case 2: 
 			
-				melee_dmg += 1.25
-				alarmtime[0] -= 20
+				melee_dmg = 5.25
+				alarmtime[0] = 80
 			
 				break;
 			//poder no nivel 3
 			case 3: 
 			
-				melee_dmg += 1.5
-				alarmtime[0] -= 25
+				melee_dmg = 5.5
+				alarmtime[0] = 65
 			
 				break;
 			case 4:
 			
-				melee_dmg += 2.25
-				alarmtime[0] -= 25
+				melee_dmg = 6.25
+				alarmtime[0] = 40
 		
-			break;						
+			break;
+			case 5: 
+			
+				repeticao_melee = 2 
+				 melee_dmg = 6.25
+				 alarmtime[0] = 40;
 
 		}
 	
