@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_projetil_boss_2",
-  "spriteId": {
-    "name": "spr_projetil_boss_2",
-    "path": "sprites/spr_projetil_boss_2/spr_projetil_boss_2.yy",
-  },
+  "name": "debug",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,12 +22,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_jogador","path":"objects/obj_jogador/obj_jogador.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss 2 atks",
-    "path": "folders/Objects/Boss 2 atks.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

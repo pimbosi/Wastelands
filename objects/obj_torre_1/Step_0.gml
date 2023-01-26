@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Inherit the parent event
-event_inherited();
-
-if torre_hp <= 0
+if distance_to_object(obj_jogador) < range //se estiver perto o suficiente
 {
-	instance_create_layer(x,y, "Instances", obj_boss);
+	esta_perto = true;
 }
+else 
+{
+	esta_perto = false;
+}
+
+depth =	-y;

@@ -28,7 +28,9 @@ alarm[2] = alarmtime[2]; //bola de fogo
 
 alarm[3] = alarmtime[3]; //facas
 
-weapon_cooldown[4] = 3;
+cooldown = 3;
+
+weapon_cooldown[4] = cooldown;
 
 alarm[4] = weapon_cooldown[4];
 
@@ -54,8 +56,6 @@ melee_dmg = 4;
 axe_dmg = 8;
 fireball_dmg = 6;
 faca_dmg = 5;
-
-weapon_cooldown[0] = 2;
 
 repeticao_axe = 1
 

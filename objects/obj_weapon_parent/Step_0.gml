@@ -27,7 +27,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if obj_jogador.weapon_cooldown[4] == 0
 				{
 					instance_destroy();
-					obj_jogador.weapon_cooldown[4] = 2;
+					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
 				}
 			
 				
@@ -75,7 +75,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if obj_jogador.weapon_cooldown[4] == 0
 				{
 					instance_destroy();
-					obj_jogador.weapon_cooldown[4] = 2;
+					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
 				}
 			
 			if(_list[| i].boss_hp <= 0)
@@ -131,7 +131,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if obj_jogador.weapon_cooldown[4] == 0
 				{
 					instance_destroy();
-					obj_jogador.weapon_cooldown[4] = 2;
+					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
 				}
 							
 			if (_list[| i].torre_hp <= 0)
