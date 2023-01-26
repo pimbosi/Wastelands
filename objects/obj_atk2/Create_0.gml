@@ -5,7 +5,7 @@ damage = 0
 
 timer_atk[0] = 120;
 
-timer_atk[1] = 240;
+timer_atk[1] = 140;
 
 alarm[0] = timer_atk[0];
 
