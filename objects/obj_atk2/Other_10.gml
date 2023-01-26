@@ -3,6 +3,6 @@
 
 obj_atk2.sprite_index = spr_atk21
 
-damage = 0.05;
+damage = 0.25;
 
 
