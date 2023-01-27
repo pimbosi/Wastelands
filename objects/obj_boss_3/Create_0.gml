@@ -7,11 +7,11 @@ boss_hp = 350;
 spr = spr_boss_3;
 sprW = spr_boss_3W;
 
-alarm_atk[1] = 120;
+alarm_atk[1] = 240;
 
 alarm[1] = alarm_atk[1];
 
-alarm_atk[3] = 20;
+alarm_atk[3] = 300;
 
 alarm[3] = alarm_atk[3];
 
