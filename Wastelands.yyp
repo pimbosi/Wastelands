@@ -63,6 +63,7 @@
     {"id":{"name":"spr_atk3","path":"sprites/spr_atk3/spr_atk3.yy",},"order":1,},
     {"id":{"name":"tile_bkg_1","path":"tilesets/tile_bkg_1/tile_bkg_1.yy",},"order":0,},
     {"id":{"name":"obj_spell_boss1","path":"objects/obj_spell_boss1/obj_spell_boss1.yy",},"order":11,},
+    {"id":{"name":"tile_floor_mapa3","path":"tilesets/tile_floor_mapa3/tile_floor_mapa3.yy",},"order":7,},
     {"id":{"name":"spr_arvore","path":"sprites/spr_arvore/spr_arvore.yy",},"order":17,},
     {"id":{"name":"obj_menu_inicial","path":"objects/obj_menu_inicial/obj_menu_inicial.yy",},"order":4,},
     {"id":{"name":"tile_collision","path":"tilesets/tile_collision/tile_collision.yy",},"order":2,},
