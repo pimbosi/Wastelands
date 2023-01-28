@@ -12,6 +12,9 @@ tilemap = layer_tilemap_get_id("Collision")
 #region intervalo dos atks
 //intervalo dos atks
 
+
+
+
 alarmtime[0] = 120; //melee
 
 alarmtime[1] = 1; //machado
@@ -20,6 +23,8 @@ alarmtime[2] = 1; //bola de fogo
 
 alarmtime[3] = 1; //facas
 
+alarmtime[5] = 1; //magia
+
 alarm[0] = alarmtime[0]; //melee
 
 alarm[1] = alarmtime[1]; //machado
@@ -27,6 +32,8 @@ alarm[1] = alarmtime[1]; //machado
 alarm[2] = alarmtime[2]; //bola de fogo
 
 alarm[3] = alarmtime[3]; //facas
+
+alarm[5] = alarmtime[5]; //magia
 
 cooldown = 3;
 
@@ -49,25 +56,20 @@ global.powers = [
 	["Machado","Atira machados", spr_axe, 0, 5], 
 	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
 	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
-	["Bola de gelo", "Dano e atrasa os inimigos", spr_bola_de_gelo, 0, 5],
+	["Magia", "Teleguiado, baixo dano", spr_magia, 0, 5],
 	]
 
 melee_dmg = 4;
 axe_dmg = 8;
 fireball_dmg = 6;
 faca_dmg = 5;
-
+magia_dmg = 0.5;
 
 repeticao_axe = 1
 repeticao_axe = 1;
 repeticao_fireball = 1;
 repeticao_faca = 1;
 repeticao_melee = 1;
-
+repeticao_magia = 1;
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
-
-//hitpoints = 20    // hp do personagem
-
-
-
