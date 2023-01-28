@@ -12,9 +12,6 @@ tilemap = layer_tilemap_get_id("Collision")
 #region intervalo dos atks
 //intervalo dos atks
 
-
-
-
 alarmtime[0] = 120; //melee
 
 alarmtime[1] = 1; //machado
@@ -25,6 +22,8 @@ alarmtime[3] = 1; //facas
 
 alarmtime[5] = 1; //magia
 
+alarmtime[6] = 1; //orbe
+
 alarm[0] = alarmtime[0]; //melee
 
 alarm[1] = alarmtime[1]; //machado
@@ -34,6 +33,8 @@ alarm[2] = alarmtime[2]; //bola de fogo
 alarm[3] = alarmtime[3]; //facas
 
 alarm[5] = alarmtime[5]; //magia
+
+alarm[6] = alarmtime[6]; //orbe
 
 cooldown = 3;
 
@@ -57,6 +58,7 @@ global.powers = [
 	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
 	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
 	["Magia", "Teleguiado, baixo dano", spr_magia, 0, 5],
+	["Orbe", "Orbita o jogador", spr_orbe, 0, 5],
 	]
 
 melee_dmg = 4;
@@ -64,8 +66,8 @@ axe_dmg = 8;
 fireball_dmg = 6;
 faca_dmg = 5;
 magia_dmg = 0.5;
+orbe_dmg = 3;
 
-repeticao_axe = 1
 repeticao_axe = 1;
 repeticao_fireball = 1;
 repeticao_faca = 1;
