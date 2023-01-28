@@ -12,3 +12,10 @@ bitmap_font = font_add_sprite_ext(spr_font_menu_loja, map_string, false, 0)
 paused = true
 instance_deactivate_all(true);
 
+#region audio
+//musica do menu inicial
+audio_play_sound(menu_music, 1, false);
+//carregando audiogroups
+audio_group_load(sfx_audiogroup);
+
+#endregion
