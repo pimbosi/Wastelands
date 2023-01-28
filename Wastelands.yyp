@@ -69,6 +69,7 @@
     {"id":{"name":"obj_menu_inicial","path":"objects/obj_menu_inicial/obj_menu_inicial.yy",},"order":4,},
     {"id":{"name":"tile_collision","path":"tilesets/tile_collision/tile_collision.yy",},"order":2,},
     {"id":{"name":"spr_torre_1","path":"sprites/spr_torre_1/spr_torre_1.yy",},"order":16,},
+    {"id":{"name":"snd_xp","path":"sounds/snd_xp/snd_xp.yy",},"order":4,},
     {"id":{"name":"spr_atk2","path":"sprites/spr_atk2/spr_atk2.yy",},"order":2,},
     {"id":{"name":"obj_magia","path":"objects/obj_magia/obj_magia.yy",},"order":5,},
     {"id":{"name":"obj_boss_life","path":"objects/obj_boss_life/obj_boss_life.yy",},"order":4,},
