@@ -8,12 +8,12 @@ if esta_perto == true
 	
 	if (image_xscale == -1) 
 	{		
-		melee.addX = -25	
+		melee.addX = -75	
 	}
 	
 	if (image_xscale == 1)  
 	{
-		melee.addX = 25 
+		melee.addX = 75
 	}
 
 }
