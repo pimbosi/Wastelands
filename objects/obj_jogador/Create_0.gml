@@ -75,3 +75,22 @@ repeticao_melee = 1;
 repeticao_magia = 1;
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
+
+#region audio
+//criando emitter para efeito de reverberação de som
+sfxe = audio_emitter_create();
+sfx_ebus = audio_bus_create();
+audio_emitter_bus(sfxe, sfx_ebus);
+
+//esses efeitos de som são relativamente novos. por algum motivo o game maker alerta possíveis
+//variáveis não utilizadas, mas são parâmetros para os efeitos de som.
+
+var _reverb = audio_effect_create(AudioEffectType.Reverb1);
+_reverb.bypass = false;
+_reverb.size = 0.2;
+_reverb.damp = 0.7;
+_reverb.mix = 0.2;
+
+sfx_ebus.effects[0] = _reverb;
+#endregion
+
