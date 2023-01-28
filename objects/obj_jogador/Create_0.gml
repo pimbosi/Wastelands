@@ -24,6 +24,8 @@ alarmtime[5] = 1; //magia
 
 alarmtime[6] = 1; //orbe
 
+alarmtime[7] = 1; //raios
+
 alarm[0] = alarmtime[0]; //melee
 
 alarm[1] = alarmtime[1]; //machado
@@ -35,6 +37,8 @@ alarm[3] = alarmtime[3]; //facas
 alarm[5] = alarmtime[5]; //magia
 
 alarm[6] = alarmtime[6]; //orbe
+
+alarm[7] = alarmtime[7]; //raios
 
 cooldown = 3;
 
@@ -56,9 +60,10 @@ global.powers = [
 	["Bola de fogo","Lança bolas de fogo", spr_fireball, 0, 5], 
 	["Machado","Atira machados", spr_axe, 0, 5], 
 	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
-	["Murasame","Hit kill. Ataque lento", spr_melee, 0, 5],
-	["Magia", "Teleguiado, baixo dano", spr_magia, 0, 5],
+	["Murasame","Ataque corpo a corpo", spr_melee, 0, 5],
+	["Varinha Mágica", "Teleguiado, baixo dano", spr_magia_menu, 0, 5],
 	["Orbe", "Orbita o jogador", spr_orbe, 0, 5],
+	["Raio", "Alto dano, destino aleatório", spr_raio_menu, 0, 5],
 	]
 
 melee_dmg = 4;
@@ -67,6 +72,7 @@ fireball_dmg = 6;
 faca_dmg = 5;
 magia_dmg = 0.5;
 orbe_dmg = 3;
+raio_dmg = 10;
 
 repeticao_axe = 1;
 repeticao_fireball = 1;
