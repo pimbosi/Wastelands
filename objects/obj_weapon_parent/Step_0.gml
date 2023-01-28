@@ -83,7 +83,10 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				//destruir entidade
 				instance_destroy(_list[| i]);
 				//Dropando xp na layer do menu quando o personagem morre				
-				room_goto_next();
+				if (room_next(room) != -1)
+				{
+					room_goto_next();
+				}
 			}
 		}
 	}

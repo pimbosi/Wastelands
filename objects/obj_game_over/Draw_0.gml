@@ -55,7 +55,7 @@ if(game_over = true)
 		
 		if contador > .50
 		{
-			if(keyboard_check(vk_alt)) game_restart();
+			if(keyboard_check(vk_enter)) game_restart();
 		}
 	}
 }
