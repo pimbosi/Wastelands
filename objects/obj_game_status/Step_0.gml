@@ -7,7 +7,8 @@ if(xp >= maxXP){ //Se o número de xp for maior ou igual a quantidade de xp nece
 	lvl += 1; //O nível aumenta + 1
 	xp -= maxXP; //o xp reinicia
 	maxXP = (30 + (lvl*300)- 20) //É recalculado o número de xp necessário pra passar de nível
-	instance_create_layer(x,y,Fase_01,obj_menu_loja)
+	
+	instance_create_layer(x,y,room,obj_menu_loja)
 }
 
 
