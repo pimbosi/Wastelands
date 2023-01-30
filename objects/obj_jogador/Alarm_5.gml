@@ -11,37 +11,40 @@ if(global.powers[4][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		//poder no nivel 1
 		case 1: //caso o lvl seja 1 então...
 			
-			magia_dmg += 1
-			alarmtime[5] -= 5
+			magia_dmg = 0.5
+			alarmtime[5] = 120
 			
 			break;
 		
 		//poder no nivel 2
 		case 2:  //caso o lvl seja 2 então...
 			
-			magia_dmg += 1.2;
-			alarmtime[5] -= 5
+			magia_dmg = 2.2;
+			alarmtime[5] = 110
 			//ex: axe_vel = 20
 			
 			break;
 		//poder no nivel 3
 		case 3: //caso o lvl seja 3 então...
 		
-			magia_dmg += 1.25;
-			alarmtime[5] -= 5
+			magia_dmg = 2.25;
+			alarmtime[5] = 100
 			repeticao_magia = 2;
 			
 			break;
 		case 4:
 			
-			magia_dmg += 2.25;
-			alarmtime[5] -= 5
+			repeticao_magia = 2
+			magia_dmg = 3.25;
+			alarmtime[5] = 90
 		
 			break;
 			
 		case 5:
 			
 			repeticao_magia = 3;
+			magia_dmg = 3.25;
+			alarmtime[5] = 90
 			
 			break;
 		//adicione mais case caso tenha mais niveis de poder		

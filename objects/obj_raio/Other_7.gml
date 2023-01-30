@@ -3,6 +3,6 @@
 
 instance_destroy();
 
-obj_jogador.alarm[7] = obj_jogador.alarmtime[7]
+//obj_jogador.alarm[7] = obj_jogador.alarmtime[7]
 
 

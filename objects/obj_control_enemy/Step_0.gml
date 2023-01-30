@@ -2,6 +2,10 @@
 
 //spawn inimigo 1
 
+timer ++
+
+if (time <= 50){
+
 var _side=irandom(1)
 if alarm[0]<=0{
 	if _side=0{
@@ -16,9 +20,9 @@ if alarm[0]<=0{
 	}
 	alarm[0] = spawn_timer
 }
-
+}
 //spawn inimigo 2
-
+if (time > 50) && (time <= 100){
 var _side=irandom(1)
 if alarm[1]<=0{
 	if _side=0{
@@ -33,9 +37,10 @@ if alarm[1]<=0{
 	}
 	alarm[1] = spawn_timer2
 }
-
+}
 //spawn inimigo 3
 
+if (time > 100){
 var _side=irandom(1)
 if alarm[2]<=0{
 	if _side=0{
@@ -49,4 +54,5 @@ if alarm[2]<=0{
 		instance_create_layer(_xx,_yy,"instances",obj_enemy_03)
 	}
 	alarm[2] = spawn_timer3
+}
 }
