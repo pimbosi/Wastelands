@@ -2,7 +2,7 @@
 
 if(global.powers[1][3] >= 0){
 	
-	audio_play_sound(snd_meele, 0, false);
+	audio_play_sound_on(sfxe, snd_meele, 0, false);
 	
 	switch(global.powers[3][3])
 		{

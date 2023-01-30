@@ -17,7 +17,7 @@ else
 	target_enemy = 3;
 }
 
-if distance_to_object(obj_enemy_01) > 200 && distance_to_object(obj_enemy_02) > 200 && distance_to_object(obj_enemy_03) > 200
+if distance_to_object(obj_enemy_01) > 2000 && distance_to_object(obj_enemy_02) > 2000 && distance_to_object(obj_enemy_03) > 2000
 {
 	with(obj_torre_parent)
 	{
@@ -54,11 +54,9 @@ if !instance_exists(global.torre_check)
 }
 
 distance = point_distance(x, y, target_enemy.x, target_enemy.y);
-
-repeat(repeticao_magia)
-{
+repeat(repeticao_magia){
 	var magia = instance_create_layer(x, y, "Instances", obj_magia);
-		magia.speed = 2;
+		magia.speed = 3;
 		magia.direction = point_direction(x,y, target_enemy.x, target_enemy.y);
 		magia.image_angle = point_direction(x,y, target_enemy.x, target_enemy.y);
-}
+	}
