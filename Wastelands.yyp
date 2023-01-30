@@ -59,6 +59,7 @@
     {"id":{"name":"spr_orbe","path":"sprites/spr_orbe/spr_orbe.yy",},"order":7,},
     {"id":{"name":"spr_magia","path":"sprites/spr_magia/spr_magia.yy",},"order":6,},
     {"id":{"name":"obj_raio","path":"objects/obj_raio/obj_raio.yy",},"order":7,},
+    {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":2,},
     {"id":{"name":"spr_life_hud","path":"sprites/spr_life_hud/spr_life_hud.yy",},"order":23,},
     {"id":{"name":"spr_collision_mark","path":"sprites/spr_collision_mark/spr_collision_mark.yy",},"order":19,},
     {"id":{"name":"obj_atk1_boss3","path":"objects/obj_atk1_boss3/obj_atk1_boss3.yy",},"order":0,},
