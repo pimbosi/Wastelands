@@ -1,6 +1,3 @@
-boost_walk = 0
-
-
 #region movimentação
 
 boost_walk = 0
