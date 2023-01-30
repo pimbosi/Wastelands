@@ -33,7 +33,6 @@ if(global.powers[2][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		
 		case 4:
 			
-			repeticao_faca = 2
 			faca_dmg = 4
 			alarmtime[3] = 80;
 			

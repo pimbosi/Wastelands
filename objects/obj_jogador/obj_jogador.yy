@@ -6,7 +6,7 @@
     "name": "spr_jogador_parado",
     "path": "sprites/spr_jogador_parado/spr_jogador_parado.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

@@ -54,11 +54,9 @@ if !instance_exists(global.torre_check)
 }
 
 distance = point_distance(x, y, target_enemy.x, target_enemy.y);
-
-repeat(repeticao_magia)
-{
+repeat(repeticao_magia){
 	var magia = instance_create_layer(x, y, "Instances", obj_magia);
 		magia.speed = 3;
 		magia.direction = point_direction(x,y, target_enemy.x, target_enemy.y);
 		magia.image_angle = point_direction(x,y, target_enemy.x, target_enemy.y);
-}
+	}
