@@ -13,7 +13,7 @@ if !surface_exists(paused_surf) {
         draw_set_valign(fa_top); 
 		draw_set_halign(fa_center);
 		draw_set_font(f_tn)  
-		draw_set_color(c_black) 
+		draw_set_color(#CCC399) 
 		
 		msg1 = "Iniciar jogo"
 		msg2 = "Configurações"
@@ -21,14 +21,14 @@ if !surface_exists(paused_surf) {
 		
 		wgui = camera_get_view_x(view_camera[0]) + display_get_gui_width()/2
 		hgui = camera_get_view_y(view_camera[0]) + display_get_gui_height()/2
-		
-	    draw_sprite(sprite_index, image_index, wgui-1, hgui+1)
+		//Sprite de fundo do menu inicial
+	    draw_sprite(sprite_index, 0, wgui-1, hgui+1)
 		                                    
-		draw_sprite_ext(spr_bg_menu_opcao, 3, wgui-145, hgui+120, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
+		draw_sprite_ext(spr_bg_menu_opcao, 2, wgui-145, hgui+120, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
 		draw_text_transformed(wgui-4, hgui+133, msg1, 2,2,image_angle)
-		draw_sprite_ext(spr_bg_menu_opcao, 3, wgui-530, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
+		draw_sprite_ext(spr_bg_menu_opcao, 2, wgui-530, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
 		draw_text_transformed(wgui-385, hgui+233, msg2, 2,2,image_angle)
-		draw_sprite_ext(spr_bg_menu_opcao, 3, wgui+235, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
+		draw_sprite_ext(spr_bg_menu_opcao, 2, wgui+235, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
 		draw_text_transformed(wgui+385, hgui+233, msg3, 2,2,image_angle)
 		
 		
@@ -43,7 +43,7 @@ if !surface_exists(paused_surf) {
 		//Primeira opção "Configurações"
 		if (point_in_rectangle(mx, my, x1, y1, x2, y2)){	
 			
-			draw_sprite_ext(spr_bg_menu_opcao, 2, wgui-530, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
+			draw_sprite_ext(spr_bg_menu_opcao, 3, wgui-530, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
 		    draw_text_transformed(wgui-385, hgui+233, msg2, 2,2,image_angle)
 			if(mouse_check_button(mb_left)){
 			   
@@ -58,7 +58,7 @@ if !surface_exists(paused_surf) {
 		//Segunda opção "sair"
 		if (point_in_rectangle(mx, my, x1, y1, x2, y2)){
 			
-			draw_sprite_ext(spr_bg_menu_opcao, 2, wgui+235, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
+			draw_sprite_ext(spr_bg_menu_opcao, 3, wgui+235, hgui+220, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
 		    draw_text_transformed(wgui+385, hgui+233, msg3, 2,2,image_angle)
 			
 			if(mouse_check_button(mb_left)){
@@ -74,7 +74,7 @@ if !surface_exists(paused_surf) {
 		//Terceira opção "entrar no jogo"
 		if (point_in_rectangle(mx, my, x1, y1, x2, y2)){	
 			
-			draw_sprite_ext(spr_bg_menu_opcao, 2, wgui-145, hgui+120, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
+			draw_sprite_ext(spr_bg_menu_opcao, 3, wgui-145, hgui+120, bg_opWidth/sprite_width, bg_opHeight/sprite_height, 0, c_white, 1)
 		    draw_text_transformed(wgui-4, hgui+133, msg1, 2,2,image_angle)
 			
 			if(mouse_check_button(mb_left)){
@@ -90,7 +90,7 @@ if !surface_exists(paused_surf) {
 		    }
 		}		
 		
-		draw_set_valign(-1);
+		draw_set_valign(-1)
 		draw_set_halign(-1)
 		draw_set_font(-1)
 		draw_set_color(c_white)
