@@ -1,7 +1,5 @@
 /// @description desenha a vida dos boss
 
-
-
 //VIDA DO BOSS 2
 
 var _gl = display_get_gui_width(); //pegar largura da janela

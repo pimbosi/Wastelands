@@ -21,7 +21,4 @@ global.loja_compras_finalizadas = 0
 timer_xp = 20;
 alarm[0] = timer_xp;
 
-globalvar enemy_child;
-enemy_child[0] = obj_enemy_01;
-enemy_child[1] = obj_enemy_02;
-enemy_child[2] = obj_enemy_03;
+

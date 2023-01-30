@@ -4,11 +4,11 @@
 var target_enemy
 var distance
 
-if distance_to_object(obj_enemy_01) < distance_to_object(obj_enemy_02) && distance_to_object(obj_enemy_01) < distance_to_object(obj_enemy_03)
+if distance_to_object(global.inimigo_check1) < distance_to_object(global.inimigo_check2) && distance_to_object(global.inimigo_check1) < distance_to_object(global.inimigo_check3)
 {
 	target_enemy = 1;
 }
-else if distance_to_object(obj_enemy_02) < distance_to_object(obj_enemy_01) && distance_to_object(obj_enemy_02) < distance_to_object(obj_enemy_03)
+else if distance_to_object(global.inimigo_check2) < distance_to_object(global.inimigo_check1) && distance_to_object(global.inimigo_check2) < distance_to_object(global.inimigo_check3)
 {
 	target_enemy = 2;
 }
@@ -17,7 +17,7 @@ else
 	target_enemy = 3;
 }
 
-if distance_to_object(obj_enemy_01) > 2000 && distance_to_object(obj_enemy_02) > 2000 && distance_to_object(obj_enemy_03) > 2000
+if instance_exists(global.torre_check) && distance_to_object(global.torre_check) < 120 
 {
 	with(obj_torre_parent)
 	{
@@ -48,7 +48,7 @@ else
 	}
 }
 
-if !instance_exists(global.torre_check)
+if instance_exists(global.boss_check)
 {
 	target_enemy = instance_nearest(x, y, global.boss_check)
 }

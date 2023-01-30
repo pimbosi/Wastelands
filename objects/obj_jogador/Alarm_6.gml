@@ -11,7 +11,6 @@ if(global.powers[5][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		case 1: 
 			
 			orbe_dmg = 5;
-			alarmtime[6] = 240;
 			
 			break;
 		
@@ -19,30 +18,28 @@ if(global.powers[5][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		case 2: 
 		
 			orbe_dmg = 5.2;
-			alarmtime[6] = 220;
+			alarmtime[6] -= 20;
 		
 			break;
 		//poder no nivel 3
 		case 3: 
 		
 			orbe_dmg = 5.3;
-			alarmtime[6] = 210;
+			alarmtime[6] -= 10;
 		
 			break;
 		
 		case 4:
-			
-			speed = 3;
+
 			orbe_dmg = 5.5;
-			alarmtime[6] = 190;
+			alarmtime[6] -= 20;
 			
 			break;
 			
 		case 5:
 			
-			speed = 4;
 			orbe_dmg = 6;
-			alarmtime[6] = 150;
+			alarmtime[6] -= 40;
 			
 			break;
 	}

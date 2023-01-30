@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_enemy_03",
   "spriteId": {
-    "name": "spr_enemy_mush",
-    "path": "sprites/spr_enemy_mush/spr_enemy_mush.yy",
+    "name": "spr_enemy_03",
+    "path": "sprites/spr_enemy_03/spr_enemy_03.yy",
   },
   "solid": false,
   "visible": true,

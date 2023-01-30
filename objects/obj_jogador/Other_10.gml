@@ -15,5 +15,5 @@ repeat(repeticao_melee){
 		melee.addX = 25 
 	}
 
-	image_xscale = -image_xscale;
+	image_xscale = image_xscale;
 }
