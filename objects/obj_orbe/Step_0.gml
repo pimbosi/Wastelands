@@ -8,7 +8,7 @@ dmg = obj_jogador.orbe_dmg;
 //Distancia da orbita ao jogador
 var distancia = 50;
 
-//Incrementa no angulo da orbita
+//Incrementa no angulo da orbita = velocidade
 angulo_orbita += 1.5;
 
 //Usar a variavel distancia como a distancia da orbita

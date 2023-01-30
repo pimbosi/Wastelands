@@ -28,7 +28,6 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				{
 					instance_destroy();
 					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
-					obj_jogador.alarm[6] = obj_jogador.alarmtime[6];
 				}
 			
 				
@@ -77,7 +76,6 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				{
 					instance_destroy();
 					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
-					obj_jogador.alarm[6] = obj_jogador.alarmtime[6];
 				}
 			
 			if(_list[| i].boss_hp <= 0)
@@ -97,21 +95,6 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 ds_list_destroy(_list);
 
 //TORRES
-
-//checar qual torre existe para definir o boss q vai spawnar
-
-if instance_exists(obj_torre_1)
-{
-	boss_check = obj_boss;
-}
-else if instance_exists(obj_torre_2)
-{
-	boss_check = obj_boss_2;
-}
-else if instance_exists(obj_torre_3)
-{
-	boss_check = obj_boss_3;
-}
 
 //dano nas torres
 
@@ -137,7 +120,6 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				{
 					instance_destroy();
 					obj_jogador.weapon_cooldown[4] = obj_jogador.cooldown;
-					obj_jogador.alarm[6] = obj_jogador.alarmtime[6];
 				}
 							
 			if (_list[| i].torre_hp <= 0)
@@ -148,7 +130,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				instance_destroy(obj_enemy_parent);
 				instance_destroy(obj_control_enemy);
 				//Spawnando boss após a torre ser destuída
-				instance_create_layer(x,y,"Instances", boss_check);
+				instance_create_layer(x,y,"Instances", global.boss_check);
 			}
 		}
 	}

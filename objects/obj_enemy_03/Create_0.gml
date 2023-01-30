@@ -3,8 +3,8 @@
 
 event_inherited();
 
-inimigo_hp = 10;
+inimigo_hp = 250;
 
-spr = spr_enemy_mush;
-sprW = spr_enemy_mushW;
+spr = spr_enemy_03;
+sprW = spr_whiteenemy_03;
 
