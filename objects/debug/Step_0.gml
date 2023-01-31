@@ -18,7 +18,7 @@ else if room_get_name(room) == "Mapa2"
 {
 	global.boss_check = obj_boss_2;
 	global.torre_check = obj_torre_2;
-	global.inimigo_check1 = obj_enemy_01
+	global.inimigo_check1 = obj_enemy_04
 	global.inimigo_check2 = obj_enemy_02
 	global.inimigo_check3 = obj_enemy_03
 	
