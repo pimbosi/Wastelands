@@ -4,11 +4,13 @@
 with(obj_boss_parent)
 {
           
+
 	direction = point_direction(x,y, obj_jogador.x, obj_jogador.y );
 	speed = velocidade_boss;
 		  
 	if (obj_jogador.x > x)
 	{  
+		
 		image_xscale = 1;  			  
 	}
 	else

@@ -2,7 +2,7 @@
 
 //spawn inimigo 1
 
-//if (obj_timer.timer <= 60){  //eu prefiro que continue spawnanando os mais fracos
+if (obj_timer.timer >= 2){  //eu prefiro que continue spawnanando os mais fracos
 
 var _side=irandom(1)
 if alarm[0]<=0{
@@ -18,7 +18,7 @@ if alarm[0]<=0{
 	}
 	alarm[0] = spawn_timer
 }
-//}
+}
 //spawn inimigo 2
 if (obj_timer.timer > 60) /*&& (obj_timer.timer <= 120)*/{
 var _side=irandom(1)
