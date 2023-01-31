@@ -14,7 +14,8 @@ instance_deactivate_all(true);
 
 #region audio
 //musica do menu inicial
-audio_play_sound(menu_music, 1, false);
+audio_play_sound(snd_lvl_0, 1, false);
 //carregando audiogroups
 audio_group_load(sfx_audiogroup);
+audio_group_load(ost_audiogroup);
 #endregion
