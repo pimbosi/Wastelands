@@ -1,4 +1,4 @@
-/// @description Magia
+/// @description magia
 // You can write your code in this editor
 
 var target_enemy = 0;

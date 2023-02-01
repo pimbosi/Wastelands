@@ -24,6 +24,12 @@ else{
 hSpeed = lengthdir_x(inputMagnitude * walkspeed+boost_walk, inputDirection);
 vSpeed = lengthdir_y(inputMagnitude * walkspeed+boost_walk, inputDirection);
 
+//obtendo ID do tilemap de colisão
+if (gotCollision = false){
+	collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
+	gotCollision = true;
+}
+
 PlayerCollision();
 
 if (hSpeed > 1){
