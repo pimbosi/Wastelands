@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
 
-inimigo_hp = 300
+inimigo_hp = 250
 
-spr = spr_enemy_08
-sprW = spr_enemy_08W
+spr = spr_enemy_07
+sprW = spr_enemy_07W
