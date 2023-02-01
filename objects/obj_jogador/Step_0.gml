@@ -1,9 +1,5 @@
 #region movimentação
 
-if (gotCollision = false){
-collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
-gotCollision = true;
-}
 boost_walk = 0
 
 //andar com setinhas e com wasd

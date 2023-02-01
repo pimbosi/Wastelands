@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_lvl_1_1",
+  "name": "menu_music",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -11,11 +11,11 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "ost_audiogroup",
-    "path": "audiogroups/ost_audiogroup",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_lvl_1_1.wav",
-  "duration": 290.34314,
+  "soundFile": "menu_music.wav",
+  "duration": 235.06796,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

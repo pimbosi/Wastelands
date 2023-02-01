@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "sfx_audiogroup",
-    "path": "audiogroups/sfx_audiogroup",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_xp.wav",
   "duration": 0.048005,

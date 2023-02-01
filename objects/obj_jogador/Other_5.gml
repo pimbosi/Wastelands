@@ -1,5 +1,0 @@
-gotCollision = false;
-
-
-
-
