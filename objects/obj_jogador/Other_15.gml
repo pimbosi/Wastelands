@@ -1,62 +1,30 @@
 /// @description Magia
 // You can write your code in this editor
 
-var target_enemy
+var target_enemy = 0;
 var distance
 
-if distance_to_object(global.inimigo_check1) < distance_to_object(global.inimigo_check2) && distance_to_object(global.inimigo_check1) < distance_to_object(global.inimigo_check3)
+if !instance_exists(global.torre_check) && !instance_exists(global.boss_check)
 {
-	target_enemy = 1;
+	target_enemy = instance_nearest(x,y, obj_enemy_parent)
 }
-else if distance_to_object(global.inimigo_check2) < distance_to_object(global.inimigo_check1) && distance_to_object(global.inimigo_check2) < distance_to_object(global.inimigo_check3)
+else if instance_exists(global.boss_check)
 {
-	target_enemy = 2;
+	target_enemy = instance_nearest(x,y, obj_boss_parent)
 }
-else
+else if (obj_torre_parent.esta_perto == true)
 {
-	target_enemy = 3;
-}
-
-if instance_exists(global.torre_check) && distance_to_object(global.torre_check) < 120 
-{
-	with(obj_torre_parent)
-	{
-		target_enemy = instance_nearest(x, y, global.torre_check)
-	}
+	target_enemy = instance_nearest(x,y, obj_torre_parent)
 }
 else
 {
-	with(obj_enemy_parent)
-	{
-
-		switch(target_enemy)
-		{
-				
-			case 1:
-				target_enemy = instance_nearest(x, y, obj_enemy_01)
-				break;
-		
-			case 2:
-				target_enemy = instance_nearest(x, y, obj_enemy_02)
-				break;
-		
-			case 3:
-				target_enemy = instance_nearest(x, y, obj_enemy_03)
-				break;
-			
-		}		
-	}
-}
-
-if instance_exists(global.boss_check)
-{
-	target_enemy = instance_nearest(x, y, global.boss_check)
+	target_enemy = instance_nearest(x,y, obj_enemy_parent)
 }
 
 distance = point_distance(x, y, target_enemy.x, target_enemy.y);
-repeat(repeticao_magia){
+
 	var magia = instance_create_layer(x, y, "Instances", obj_magia);
 		magia.speed = 3;
 		magia.direction = point_direction(x,y, target_enemy.x, target_enemy.y);
 		magia.image_angle = point_direction(x,y, target_enemy.x, target_enemy.y);
-	}
+

@@ -29,12 +29,10 @@ if(global.powers[4][3] > 0){ //Se a flag tiver ativa o poder é acionado
 		
 			magia_dmg = 2.25;
 			alarmtime[5] = 100
-			repeticao_magia = 2;
 			
 			break;
 		case 4:
 			
-			repeticao_magia = 2
 			magia_dmg = 3.25;
 			alarmtime[5] = 90
 		
@@ -42,7 +40,6 @@ if(global.powers[4][3] > 0){ //Se a flag tiver ativa o poder é acionado
 			
 		case 5:
 			
-			repeticao_magia = 3;
 			magia_dmg = 3.25;
 			alarmtime[5] = 90
 			

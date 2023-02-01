@@ -9,7 +9,8 @@ if room_get_name(room) == "Fase_01"
 	global.inimigo_check1 = obj_enemy_01 
 	global.inimigo_check2 = obj_enemy_02
 	global.inimigo_check3 = obj_enemy_03
-	if !instance_exists(obj_control_enemy)
+	
+	if !instance_exists(obj_control_enemy) && (obj_timer.timer <= 0.2)
 	{
 		instance_create_layer(obj_jogador.x,obj_jogador.y, "Instances", obj_control_enemy)
 	}
@@ -22,7 +23,7 @@ else if room_get_name(room) == "Mapa2"
 	global.inimigo_check2 = obj_enemy_02
 	global.inimigo_check3 = obj_enemy_03
 	
-	if !instance_exists(obj_control_enemy)
+	if !instance_exists(obj_control_enemy) && (obj_timer.timer <= 0.2)
 	{
 		instance_create_layer(obj_jogador.x,obj_jogador.y, "Instances", obj_control_enemy)
 	}
@@ -36,7 +37,7 @@ else if room_get_name(room) == "Mapa3"
 	global.inimigo_check2 = obj_enemy_02
 	global.inimigo_check3 = obj_enemy_03
 	
-	if !instance_exists(obj_control_enemy)
+	if !instance_exists(obj_control_enemy) && (obj_timer.timer <= 0.2)
 	{
 		instance_create_layer(obj_jogador.x,obj_jogador.y, "Instances", obj_control_enemy)
 	}

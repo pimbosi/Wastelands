@@ -1,6 +1,6 @@
 ///@description reset de sprite
 
-	//resetar
+//resetar
 	
 if(sprite_index == sprW)
 {
