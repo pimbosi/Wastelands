@@ -1,7 +1,5 @@
-/// @description retirar música do menu da memória
-audio_stop_sound(menu_music);
-audio_destroy_stream(menu_music)
-
+/// @description parar música do menu após fade-out
+audio_stop_sound(snd_lvl_0);
 
 
 

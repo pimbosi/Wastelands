@@ -6,8 +6,8 @@ walkspeed = 2;
 #endregion
 
 //variaveis para a colisão com o mapa
+gotCollision = false;
 
-collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
 
 #region intervalo dos atks
 //intervalo dos atks
