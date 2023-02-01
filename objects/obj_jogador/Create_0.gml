@@ -77,7 +77,6 @@ raio_dmg = 10;
 repeticao_axe = 1;
 repeticao_fireball = 1;
 repeticao_melee = 1;
-repeticao_magia = 1;
 
 collectRadius = 50;  //Raio do círculo de coleta de xp
 
