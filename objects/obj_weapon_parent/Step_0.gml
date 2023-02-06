@@ -142,4 +142,3 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 
 ds_list_destroy(_list);
 
-

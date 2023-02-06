@@ -1,5 +1,4 @@
-
-		instance_deactivate_all(true);
+instance_deactivate_all(true);
 	
         draw_set_valign(fa_top); //Alinhamento vertical das letras (em cima)
 		draw_set_halign(fa_center); //Alinhamento horizontal das letras (a esquerda)
@@ -16,14 +15,7 @@
 				draw_text_transformed(wgui, hgui - 7 , "Parabéns, você zerou o game!", 1.5,1.5,image_angle)
 			}else if(current_time > ms_agora+10400){ //1000ms = 1s
 				game_restart();
-			}/*
-			else if(current_time > ms_agora+4400){
-				draw_sprite_ext(sprite_index, 70,wgui, hgui+2, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
-				draw_text_transformed(wgui, hgui + 2 , "Próxima Fase...", 1.5,1.5,image_angle)	
-			}else if(current_time > ms_agora+3400){
-				draw_sprite_ext(sprite_index, 70,wgui, hgui+2, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
-				draw_text_transformed(wgui, hgui + 2 , "Próxima Fase..", 1.5,1.5,image_angle)
-			}*/
+			}
 			else if(current_time > ms_agora+2400){
 				draw_sprite_ext(sprite_index, 70,wgui, hgui+2, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
 				draw_text_transformed(wgui, hgui - 320 , "Créditos", 1.5,1.5,image_angle)
@@ -39,6 +31,3 @@
 		draw_set_valign(-1);
 		draw_set_halign(-1);
 		draw_set_font(-1); 
-	
-
-
