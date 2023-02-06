@@ -55,10 +55,3 @@ if alarm[2]<=0{
 }
 }
 
-//spawnar torre apos um tempo
-/*
-if (obj_timer.timer >= 20){
-	instance_create_layer(obj_torre_life.x,obj_torre_life.y,"Instances",global.torre_check)
-}
-	
-	

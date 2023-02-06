@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "torres",
+    "path": "folders/Objects/torres.yy",
   },
   "parentObjectId": {
     "name": "obj_torre_parent",

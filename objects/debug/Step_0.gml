@@ -53,8 +53,15 @@ if keyboard_check_released(vk_alt) && keyboard_check_released(vk_shift)
 	obj_control_enemy.alarm[1] = 1000000;
 	obj_control_enemy.alarm[2] = 1000000;
 	instance_destroy(obj_enemy_parent);
-	instance_destroy(obj_torre_parent);
-	instance_create_layer(obj_torre_life.x, obj_torre_life.y, "Instances", global.boss_check);
+	
+	if !instance_exists(global.torre_check){
+		instance_create_layer(obj_torre_life.x, obj_torre_life.y, "Instances", global.torre_check);
+	}
+	else
+	{
+		instance_destroy(obj_torre_parent);
+		instance_create_layer(obj_torre_life.x, obj_torre_life.y, "Instances", global.boss_check);
+	}
 }
 
 //recriar objetos destruidos
@@ -81,4 +88,9 @@ if keyboard_check_released(vk_control) && keyboard_check_released(vk_alt)
 
 		instance_create_layer(0,0,"Instances",obj_transicao)
 	}
+}
+
+if keyboard_check_released(vk_space) 
+{
+	obj_timer.timer += 30;
 }
