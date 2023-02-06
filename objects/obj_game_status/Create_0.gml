@@ -16,6 +16,27 @@ maxHp = 40;
 globalvar hp; //Vida do personagem principal
 hp = 40
 
+//Indicador das fases
+globalvar Fase01; //Fase 01
+Fase01 = false;
+if (room == 0){Fase01 = true; }
+
+globalvar Fase02; //Fase 02
+Fase02 = false;
+if (room == 1){Fase02 = true;}
+
+globalvar Fase03; //Fase 03
+Fase03 = false;
+if(room == 2){
+	Fase03 = true;
+}
+
+globalvar inimigoMorto;
+inimigoMorto = false;
+
+globalvar numeroDeMortos;
+numeroDeMortos = 0;
+
 global.loja_compras_finalizadas = 0
 
 timer_xp = 20;
