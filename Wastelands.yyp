@@ -205,6 +205,7 @@
     {"id":{"name":"obj_torre_2","path":"objects/obj_torre_2/obj_torre_2.yy",},"order":12,},
     {"id":{"name":"obj_transicao","path":"objects/obj_transicao/obj_transicao.yy",},"order":0,},
     {"id":{"name":"obj_atk1_boss31","path":"objects/obj_atk1_boss31/obj_atk1_boss31.yy",},"order":2,},
+    {"id":{"name":"obj_creditos","path":"objects/obj_creditos/obj_creditos.yy",},"order":0,},
     {"id":{"name":"spr_bossW","path":"sprites/spr_bossW/spr_bossW.yy",},"order":5,},
     {"id":{"name":"spr_whiteenemy_02","path":"sprites/spr_whiteenemy_02/spr_whiteenemy_02.yy",},"order":3,},
     {"id":{"name":"Mapa3","path":"rooms/Mapa3/Mapa3.yy",},"order":2,},

@@ -80,5 +80,8 @@ if keyboard_check_released(vk_control) && keyboard_check_released(vk_alt)
 	{
 
 		instance_create_layer(0,0,"Instances",obj_transicao)
+	}else{
+	    instance_create_layer(0,0,"Instances",obj_creditos)
 	}
+	
 }
