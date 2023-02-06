@@ -13,6 +13,10 @@ draw_sprite_ext(spr_xp_hud, 0, +10, +4, 8.6, 0.8, 0, c_white, 1);
 draw_sprite_ext(spr_xp_hud_full, 0, +13.4, +7.5, xpNoMomento/11.15, 0.8, 0, c_white, 1);
 
 //Desenhando os indicadores de level, experiência e xp target para melhor compreensão do funcionamento
-draw_text_color(x+390,y-220,string("Level: ") + string(lvl),c_white,c_white,c_white,c_white,1);
-draw_text_color(x+390,y-205,string("Experience: ") + string(xp),c_white,c_white,c_white,c_white,1);
-draw_text_color(x+390,y-190,string("XP Target: ") + string(maxXP),c_white,c_white,c_white,c_white,1);
+draw_text_color(x+605,y-225,string("Level: ") + string(lvl),cor,cor,cor,cor,1);
+//draw_text_color(x+390,y-205,string("Experience: ") + string(xp),c_white,c_white,c_white,c_white,1);
+//draw_text_color(x+390,y-190,string("XP Target: ") + string(maxXP),c_white,c_white,c_white,c_white,1);
+
+//Desenhando a quantidade de inimigos mortos
+draw_sprite_ext(spr_caveira, 0, x+550, y -215, 25/sprite_width, 25/sprite_height,0, c_white, 1);
+draw_text_color(x+570,y-225, string(numeroDeMortos),cor,cor,cor,cor,1);

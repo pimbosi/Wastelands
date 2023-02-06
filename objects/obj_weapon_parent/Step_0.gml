@@ -33,6 +33,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				
 			if(_list[| i].inimigo_hp <= 0)
 			{
+				inimigoMorto = true;
 				//destruir entidade
 				instance_destroy(_list[| i]);
 				//Dropando xp na layer do menu quando o personagem morre
@@ -80,6 +81,7 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 			
 			if(_list[| i].boss_hp <= 0)
 			{
+				inimigoMorto = true;
 				//destruir entidade
 				instance_destroy(_list[| i]);
 				//Dropando xp na layer do menu quando o personagem morre				

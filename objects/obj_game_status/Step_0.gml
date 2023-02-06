@@ -18,3 +18,13 @@ if hp<=0{ //Se a vida for menor ou igual a 0 game over
 	hp += 40;
 }
 
+if(room == 2){
+	cor = c_white;
+}else{
+    cor = c_black;
+}
+if(inimigoMorto){
+  numeroDeMortos += 1;
+  inimigoMorto = false;
+}
+
