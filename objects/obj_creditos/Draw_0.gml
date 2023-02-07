@@ -13,19 +13,16 @@ instance_deactivate_all(true);
 				draw_sprite_ext(sprite_index, image_index,wgui, hgui+2, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
 				draw_text_transformed(wgui, hgui - 50 , "The End", 1.5,1.5,image_angle)
 				draw_text_transformed(wgui, hgui - 7 , "Parabéns, você zerou o game!", 1.5,1.5,image_angle)
-			}else if(current_time > ms_agora+10400){ //1000ms = 1s
+			}else if(current_time > ms_agora+30400){ //1000ms = 1s
 				game_restart();
+			}else if(current_time > ms_agora+2400){
+				posicaoBlck = 2;
+				posicao +=1;
 			}
-			else if(current_time > ms_agora+2400){
-				draw_sprite_ext(sprite_index, 70,wgui, hgui+2, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
-				draw_text_transformed(wgui, hgui - 320 , "Créditos", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 260 , "G. Augusto Rocha", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 230 , "Marcelo Alves", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 200 , "Gabriel Maciel", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 170 , "Murilo Brandão de Souza Rodrigues", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 140 , "Mateus Santos Negrini", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 110 , "Artur Bartz", 1.5,1.5,image_angle)
-				draw_text_transformed(wgui, hgui - 80 , "Felipe Rodrigues", 1.5,1.5,image_angle)
+			
+			draw_sprite_ext(sprite_index, 70,wgui, hgui + posicaoBlck, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)	   
+			for(var i = 0; i < tamanhoMax; i++){					 
+			     draw_text(wgui, hgui - posicao + dist*i , creditos[i])
 			}
 		
 		draw_set_valign(-1);
