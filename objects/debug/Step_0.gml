@@ -85,12 +85,18 @@ if keyboard_check_released(vk_control) && keyboard_check_released(vk_alt)
 	instance_destroy(obj_boss_parent);	
 	if (room_next(room) != -1)
 	{
-
 		instance_create_layer(0,0,"Instances",obj_transicao)
+	}else{
+	    instance_create_layer(0,0,"Instances",obj_creditos)
 	}
+
+	
 }
+
+
 
 if keyboard_check_released(vk_space) 
 {
 	obj_timer.timer += 30;
 }
+

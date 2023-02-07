@@ -88,6 +88,8 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				if (room_next(room) != -1)
 				{
 					room_goto_next();
+				}else{
+				   instance_create_layer(0,0,"Instances",obj_creditos)
 				}
 			}
 		}

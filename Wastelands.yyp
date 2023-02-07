@@ -98,6 +98,7 @@
     {"id":{"name":"spr_enemy_02","path":"sprites/spr_enemy_02/spr_enemy_02.yy",},"order":1,},
     {"id":{"name":"spr_bg_poderes","path":"sprites/spr_bg_poderes/spr_bg_poderes.yy",},"order":4,},
     {"id":{"name":"spr_base","path":"sprites/spr_base/spr_base.yy",},"order":7,},
+    {"id":{"name":"obj_creditos","path":"objects/obj_creditos/obj_creditos.yy",},"order":0,},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":22,},
     {"id":{"name":"spr_bkgmapa2","path":"sprites/spr_bkgmapa2/spr_bkgmapa2.yy",},"order":23,},
     {"id":{"name":"tile_bkgprops_1","path":"tilesets/tile_bkgprops_1/tile_bkgprops_1.yy",},"order":1,},
