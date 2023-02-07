@@ -100,3 +100,7 @@ _reverb.mix = 0.2;
 sfx_ebus.effects[0] = _reverb;
 #endregion
 
+#region variavel para a coleta da fruta
+fcollect_range = 32
+
+#endregion
