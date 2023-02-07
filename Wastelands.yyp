@@ -60,6 +60,7 @@
     {"id":{"name":"spr_transicao","path":"sprites/spr_transicao/spr_transicao.yy",},"order":0,},
     {"id":{"name":"spr_enemy_01W","path":"sprites/spr_enemy_01W/spr_enemy_01W.yy",},"order":11,},
     {"id":{"name":"obj_torre_life","path":"objects/obj_torre_life/obj_torre_life.yy",},"order":5,},
+    {"id":{"name":"obj_dados","path":"objects/obj_dados/obj_dados.yy",},"order":0,},
     {"id":{"name":"obj_weapon_parent","path":"objects/obj_weapon_parent/obj_weapon_parent.yy",},"order":3,},
     {"id":{"name":"spr_jogadorAlfha","path":"sprites/spr_jogadorAlfha/spr_jogadorAlfha.yy",},"order":0,},
     {"id":{"name":"spr_fireball","path":"sprites/spr_fireball/spr_fireball.yy",},"order":1,},

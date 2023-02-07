@@ -18,11 +18,3 @@ dist = 50;
 tamanhoMax = array_length(creditos);
 
 ms_agora = current_time
-comeco = ms_agora+2400
-fim = ms_agora+15400
-/*
-for(var i = 0; i < tamanhoMax; i++){
-   
-   draw_text_transformed(wgui, hgui + (dist*i) , creditos[i], 1.5,1.5,image_angle)
-}
-*/
