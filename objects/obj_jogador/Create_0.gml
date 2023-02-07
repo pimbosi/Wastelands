@@ -61,7 +61,7 @@ global.inventario = []
 global.powers = [
 	["Bola de fogo","Lança bolas de fogo", spr_fireball, 0, 5], 
 	["Machado","Atira machados", spr_axe, 0, 5], 
-	["Faca","Atira no inimigo mais próximo", spr_faca, 0, 5],
+	["Faca","Atira na direção do mause", spr_faca, 0, 5],
 	["Espada","Ataque corpo a corpo", spr_melee_menu, 0, 5],
 	["Varinha Mágica", "Teleguiado, baixo dano", spr_magia_menu, 0, 5],
 	["Orbe", "Orbita o jogador", spr_orbe, 0, 5],

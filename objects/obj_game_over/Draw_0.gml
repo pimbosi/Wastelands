@@ -55,7 +55,11 @@ if(game_over = true)
 		
 		if contador > .50
 		{
-			if(keyboard_check(vk_enter)) game_restart();
+			if(keyboard_check(vk_enter)){ 
+				 //Criando o objeto de dados
+				//instance_create_layer(0,0,"Instances",obj_dados);
+			  game_restart();
+			}
 		}
 	}
 }

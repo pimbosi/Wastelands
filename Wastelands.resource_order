@@ -33,6 +33,7 @@
     {"name":"spr_black_mask","order":15,"path":"sprites/spr_black_mask/spr_black_mask.yy",},
     {"name":"spr_enemy_01W","order":11,"path":"sprites/spr_enemy_01W/spr_enemy_01W.yy",},
     {"name":"obj_torre_life","order":5,"path":"objects/obj_torre_life/obj_torre_life.yy",},
+    {"name":"obj_dados","order":6,"path":"objects/obj_dados/obj_dados.yy",},
     {"name":"obj_weapon_parent","order":3,"path":"objects/obj_weapon_parent/obj_weapon_parent.yy",},
     {"name":"spr_fireball","order":1,"path":"sprites/spr_fireball/spr_fireball.yy",},
     {"name":"obj_enemy_03","order":10,"path":"objects/obj_enemy_03/obj_enemy_03.yy",},

@@ -14,9 +14,6 @@ if !surface_exists(paused_surf) {
 		draw_set_halign(fa_center); //Alinhamento horizontal das letras (a esquerda)
 		draw_set_font(f_tn)  //Setando a fonte que sera utilizada pra escrever as opções
 		
-		/*w_gui = display_get_gui_width();
-		h_gui = display_get_gui_height();*/
-		
 		wgui = camera_get_view_x(view_camera[0]) + display_get_gui_width()/2
 		hgui = camera_get_view_y(view_camera[0]) + display_get_gui_height()/2
 		
@@ -27,9 +24,6 @@ if !surface_exists(paused_surf) {
 	    draw_sprite_ext(spr_black_mask, 1, wgui+4, hgui+3, blck_width/sprite_width, blck_height/sprite_height, 0, c_white,1)
 		
 		draw_set_color(c_black); //Setando uma cor pra ser utilizada (Preto)
-		/*draw_set_alpha(.7); //Opacidade do fundo
-		draw_rectangle(0,0,w_gui,h_gui,false); //Desenhando um retangulo de fundo quando pausado o jogo
-		draw_set_alpha(1);//Resetando a opacidade */
 		
 		//Desenhando o background do menu
 		draw_sprite_ext(sprite_index, image_index, wgui-200, hgui-225,menu_width/sprite_width, menu_height/sprite_height, 0, c_white,1)
