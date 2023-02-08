@@ -12,6 +12,7 @@ else timer = 0
 
 if (timer >= 300) && !instance_exists(global.torre_check) && !instance_exists(global.boss_check)//spawna a torre após um tempo
 {
+	instance_create_layer(obj_jogador.x + 100,obj_jogador.y,"Instances", obj_torre_life)
 	instance_create_layer(obj_torre_life.x,obj_torre_life.y,"Instances", global.torre_check)
 }
 

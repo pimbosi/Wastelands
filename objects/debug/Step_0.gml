@@ -54,8 +54,10 @@ if keyboard_check_released(vk_alt) && keyboard_check_released(vk_shift)
 	obj_control_enemy.alarm[2] = 1000000;
 	instance_destroy(obj_enemy_parent);
 	
-	if !instance_exists(global.torre_check){
-		instance_create_layer(obj_torre_life.x, obj_torre_life.y, "Instances", global.torre_check);
+	if !instance_exists(global.torre_check)
+	{
+		instance_create_layer(obj_jogador.x + 100,obj_jogador.y,"Instances", obj_torre_life)
+		instance_create_layer(obj_torre_life.x,obj_torre_life.y,"Instances", global.torre_check)		
 	}
 	else
 	{
@@ -64,23 +66,9 @@ if keyboard_check_released(vk_alt) && keyboard_check_released(vk_shift)
 	}
 }
 
-//recriar objetos destruidos
-
-if keyboard_check_released(vk_f11) && !instance_exists(obj_enemy_parent)
-{
-	obj_control_enemy.alarm[0] = 1;
-	obj_control_enemy.alarm[1] = 1;
-	obj_control_enemy.alarm[2] = 1;
-	instance_create_layer(obj_torre_life.x, obj_torre_life.y, "Instances", obj_torre_parent);
-	instance_create_layer(obj_torre_life.x, obj_torre_life.y, "Instances", global.torre_check);
-	instance_create_layer(x,y, "Instances", obj_enemy_parent);
-	instance_destroy(global.boss_check);
-	
-}
-
 //matar boss e ir para proxima fase
 
-if keyboard_check_released(vk_control) && keyboard_check_released(vk_alt)
+if keyboard_check_released(vk_control) && keyboard_check_released(vk_alt) &&instance_exists(global.boss_check)
 {
 	instance_destroy(obj_boss_parent);	
 	if (room_next(room) != -1)
@@ -93,10 +81,10 @@ if keyboard_check_released(vk_control) && keyboard_check_released(vk_alt)
 	
 }
 
-
+//acrescentar mais 60 segundos no timer
 
 if keyboard_check_released(vk_space) 
 {
-	obj_timer.timer += 30;
+	obj_timer.timer += 60;
 }
 
