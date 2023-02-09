@@ -7,8 +7,8 @@
     "path": "audiogroups/ost_audiogroup",
   },
   "bitDepth": 1,
-  "bitRate": 320,
-  "compression": 1,
+  "bitRate": 160,
+  "compression": 0,
   "conversionMode": 0,
   "duration": 149.33333,
   "parent": {
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_lvl_1_2.wav",
+  "soundFile": "snd_lvl_1_2.ogg",
   "type": 1,
-  "volume": 1.0,
+  "volume": 0.76,
 }
