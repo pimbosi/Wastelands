@@ -7,8 +7,8 @@
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
-  "bitRate": 320,
-  "compression": 1,
+  "bitRate": 160,
+  "compression": 0,
   "conversionMode": 0,
   "duration": 72.62733,
   "parent": {
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_lvl_0.wav",
+  "soundFile": "snd_lvl_0.ogg",
   "type": 1,
   "volume": 1.0,
 }
