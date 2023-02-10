@@ -13,7 +13,7 @@ inputDirection = point_direction(0,0,right-left,down-up);
 inputMagnitude = (right - left != 0) || (down - up != 0);
 
 if (inputMagnitude != 0){
-	boost_walk = walkspeed*lvl*0.05
+	boost_walk = (int64(global.lvl/5)*0.2)+0.01
 	sprite_index = spr_jogador_movimento;
 }
 else{

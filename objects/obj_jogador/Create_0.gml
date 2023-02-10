@@ -1,7 +1,9 @@
 #region variaveis movimentacao
 //andar
 
-walkspeed = 2;
+walkspeed = 1
+
+
 //teste
 #endregion
 
