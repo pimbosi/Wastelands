@@ -42,6 +42,41 @@ if(global.powers[5][3] > 0){ //Se a flag tiver ativa o poder é acionado
 			alarmtime[6] -= 40;
 			
 			break;
+				
+		case 6: 
+			
+			orbe_dmg = 7;
+				 
+			break;	 
+			
+		case 7: 
+
+			orbe_dmg = 7.5;
+			alarmtime[6] -= 20;
+
+			
+			break;	
+			
+		case 8: 
+ 
+			orbe_dmg = 8.5;
+
+			break;	
+		
+		case 9: 
+			
+			orbe_dmg = 8.75;
+			alarmtime[6] -= 20;
+
+			break;
+			
+		case 10: 
+		
+			orbe_dmg = 10;
+			alarmtime[6] -= 10;
+			
+			break;			
+			
 	}
 	event_user(6);
 }

@@ -4,7 +4,7 @@
 event_inherited();
 
 //vida
-boss_hp = 250; //quando alterado, é preciso tambem alterar no obj_boss_life
+boss_hp = 1000; //quando alterado, é preciso tambem alterar no obj_boss_life
 
 //sprites
 spr = spr_boss_2; 

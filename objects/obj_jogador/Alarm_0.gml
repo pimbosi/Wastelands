@@ -36,9 +36,40 @@ if(global.powers[1][3] >= 0){
 			break;
 			case 5: 
 			
-				repeticao_melee = 2 
-				 melee_dmg = 6.25
+				 melee_dmg = 6.75
 				 alarmtime[0] = 40;
+			
+			case 6: 
+			
+				 melee_dmg = 7
+				 alarmtime[0] = 40;	
+				 
+			break;	 
+			
+			case 7: 
+
+				 melee_dmg = 7.5
+				 alarmtime[0] = 40;		 
+			break;	
+			
+			case 8: 
+
+				 melee_dmg = 7.75
+				 alarmtime[0] = 35;		 
+			break;	
+		
+			case 9: 
+			
+				repeticao_melee = 3 
+				 melee_dmg = 8
+				 alarmtime[0] = 40;		 
+			break;
+			
+			case 10: 
+
+				 melee_dmg = 9
+				 alarmtime[0] = 30;		 
+			break;				
 
 		}
 	

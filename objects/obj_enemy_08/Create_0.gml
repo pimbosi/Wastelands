@@ -3,7 +3,7 @@
 
 event_inherited();
 
-inimigo_hp = 300
+inimigo_hp = 500
 
 spr = spr_enemy_08
 sprW = spr_enemy_08W
