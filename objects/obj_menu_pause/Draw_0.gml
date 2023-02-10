@@ -54,7 +54,7 @@ if !surface_exists(paused_surf) {
 			
 				if(mouse_check_button(mb_left)){
 					//Segunda opção
-					if(index == 1){
+					if(index == 0){
 						paused = !paused;
 						if(paused == false){
 							instance_activate_all();
@@ -63,7 +63,7 @@ if !surface_exists(paused_surf) {
 						}
 					}
 					//Terceira opção (fecha o jogo direto, mas na verdade era pra ir pra "página inicial" do jogo)
-					if(index == 2){
+					if(index == 1){
 						game_restart();
 					}
 				}	

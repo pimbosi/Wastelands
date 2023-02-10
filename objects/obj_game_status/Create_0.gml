@@ -42,4 +42,8 @@ global.loja_compras_finalizadas = 0
 timer_xp = 20;
 alarm[0] = timer_xp;
 
+nivel_max = 0
+for(x=0;x<array_length(global.powers);x++){
+	nivel_max += global.powers[x][4]
+}
 
