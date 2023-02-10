@@ -144,8 +144,6 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				//destruir inimigos
 				instance_destroy(obj_enemy_parent);
 				instance_destroy(obj_control_enemy);
-				//Spawnando boss após a torre ser destuída
-				tm_sleep(1)
 				instance_create_layer(x,y,"Instances", global.boss_check);
 			}
 		}

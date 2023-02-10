@@ -17,6 +17,6 @@ selecionado_height = 25; //Altura da sprite do indicador de selecionado
 blck_width = 530 //Largura da sprite
 blck_height = 350 //Altura da sprite
 
-opcoes = ["Configurações","Voltar ao jogo","Desistir"];
+opcoes = ["Voltar ao jogo","Desistir"];
 index = 0;
 op_max = array_length(opcoes);
