@@ -44,8 +44,39 @@ if(global.powers[1][3] > 0){ //Se a flag tiver ativa o poder é acionado
 			repeticao_axe = 2;
 			
 			break;
-		//adicione mais case caso tenha mais niveis de poder		
 		
+		case 6: 
+			
+			 axe_dmg += 2 
+			 alarmtime[1] -= 2;	
+				 
+			break;	 
+			
+		case 7: 
+
+			repeticao_axe = 3;
+			 axe_dmg += 3 
+			 alarmtime[1] -= 2;	 
+			break;	
+			
+		case 8: 
+ 
+			 alarmtime[1] -= 2;		 
+			break;	
+		
+		case 9: 
+			
+			 repeticao_axe = 4;
+			 axe_dmg += 2 
+			 alarmtime[1] -= 2;	
+			break;
+			
+		case 10: 
+		
+			 axe_dmg += 5 
+			 alarmtime[1] -= 2;	 
+			break;			
+		//adicione mais case caso tenha mais niveis de poder				
 	}	
 	
 	event_user(1);	

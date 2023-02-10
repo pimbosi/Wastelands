@@ -11,7 +11,6 @@ if((xp >= maxXP) && lvl <= nivel_max){ //Se o número de xp for maior ou igual a
 	instance_create_layer(0,0,"Instances",obj_menu_loja)
 }
 
-
 if hp<=0{ //Se a vida for menor ou igual a 0 game over
 	game_over = true;
 	hp = 0;

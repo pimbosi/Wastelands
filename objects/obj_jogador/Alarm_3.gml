@@ -44,6 +44,39 @@ if(global.powers[2][3] > 0){ //Se a flag tiver ativa o poder é acionado
 			alarmtime[3] = 40;
 			
 			break;
+			
+		case 6: 
+			
+			faca_dmg = 6;
+
+				 
+			break;	 
+			
+		case 7: 
+
+			faca_dmg = 7;
+			alarmtime[3] = 35;
+			
+			break;	
+			
+		case 8: 
+ 
+			faca_dmg = 7.5;
+
+			break;	
+		
+		case 9: 
+			
+			faca_dmg = 8.5;
+
+			break;
+			
+		case 10: 
+		
+			faca_dmg = 9;
+			alarmtime[3] = 30;
+			break;					
+
 	}
 	event_user(3);
 }

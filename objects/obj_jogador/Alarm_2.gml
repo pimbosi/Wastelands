@@ -47,6 +47,40 @@ if (global.powers[0][3] > 0){ //Se a flag tiver ativa o poder é acionado
 			alarmtime[2] = 160;
 			
 			break;
+
+		case 6: 
+			
+			fireball_dmg = 16;
+			alarmtime[2] = 155;
+				 
+			break;	 
+			
+		case 7: 
+
+			fireball_dmg = 20;
+			alarmtime[2] = 140;
+			
+			break;	
+			
+		case 8: 
+ 
+			fireball_dmg = 25;
+			alarmtime[2] = 130;	 
+			break;	
+		
+		case 9: 
+			
+			fireball_dmg = 28;
+
+			break;
+			
+		case 10: 
+		
+			repeticao_fireball = 4;
+			fireball_dmg = 32;
+			alarmtime[2] = 120;
+			break;			
+			
 	}
 
 	event_user(2);

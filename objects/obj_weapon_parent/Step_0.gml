@@ -37,7 +37,18 @@ if (_num > 0) && (obj_jogador.weapon_cooldown[4] > 0)
 				//destruir entidade
 				instance_destroy(_list[| i]);
 				//Dropando xp na layer do menu quando o personagem morre
-				instance_create_layer(x,y,"Menu",obj_xp);
+				if (global.inimigo_check1 == obj_enemy_01)
+				{
+					instance_create_layer(x,y,"Menu",obj_xp);
+				}
+				else if (global.inimigo_check1 == obj_enemy_04)
+				{
+					instance_create_layer(x,y,"Menu",obj_xp2);
+				}
+				else
+				{
+					instance_create_layer(x,y,"Menu",obj_xp3);
+				}
 			}
 		}
 	}

@@ -44,6 +44,6 @@ if (hSpeed < -1){
 
 #region regeração de vida
 	if hp < maxHp{
-		hp += lvl*0.005
+		hp += 0.005
 	}
 #endregion

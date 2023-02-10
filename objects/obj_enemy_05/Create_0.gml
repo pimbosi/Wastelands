@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-inimigo_hp = 400;
+inimigo_hp = 350;
 
 spr = spr_enemy_05;
 sprW = spr_enemy_05W;

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 
-boss_hp = 350;
+boss_hp = 2000;
 
 spr = spr_boss_3;
 sprW = spr_boss_3W;

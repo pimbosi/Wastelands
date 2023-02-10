@@ -46,6 +46,40 @@ if(global.powers[4][3] > 0){ //Se a flag tiver ativa o poder é acionado
 			alarmtime[5] = 90
 			
 			break;
+		
+		case 6: 
+			
+			magia_dmg = 3.75;
+			alarmtime[5] = 80
+
+				 
+			break;	 
+			
+		case 7: 
+
+			magia_dmg = 4;
+
+			
+			break;	
+			
+		case 8: 
+ 
+			magia_dmg = 4.2;
+			alarmtime[5] = 75
+
+			break;	
+		
+		case 9: 
+			
+			magia_dmg = 4.7;
+
+			break;
+			
+		case 10: 
+		
+			magia_dmg = 4.7;
+			alarmtime[5] = 60
+			break;			
 		//adicione mais case caso tenha mais niveis de poder		
 		
 	}	
