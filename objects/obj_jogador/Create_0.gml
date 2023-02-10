@@ -61,13 +61,13 @@ global.inventario = []
  //poderes
 //Ordem = 0 Nome, 1 Descricao, 2 sprite, 3 nível, 4...,
 global.powers = [
-	["Bola de fogo","Lança bolas de fogo", spr_fireball, 0, 5], 
-	["Machado","Atira machados", spr_axe, 0, 5], 
-	["Faca","Atira na direção do mause", spr_faca, 0, 5],
-	["Espada","Ataque corpo a corpo", spr_melee_menu, 0, 5],
-	["Varinha Mágica", "Teleguiado, baixo dano", spr_magia_menu, 0, 5],
-	["Orbe", "Orbita o jogador", spr_orbe, 0, 5],
-	["Raio", "Alto dano, destino aleatório", spr_raio_menu, 0, 5],
+	["Bola de fogo","Lança bolas de fogo", spr_fireball, 0, 10], 
+	["Machado","Atira machados", spr_axe, 0, 10], 
+	["Faca","Atira na direção do mause", spr_faca, 0, 10],
+	["Espada","Ataque corpo a corpo", spr_melee_menu, 0, 10],
+	["Varinha Mágica", "Teleguiado, baixo dano", spr_magia_menu, 0, 10],
+	["Orbe", "Orbita o jogador", spr_orbe, 0, 10],
+	["Raio", "Alto dano, destino aleatório", spr_raio_menu, 0, 10],
 	]
 
 melee_dmg = 4;

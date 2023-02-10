@@ -21,7 +21,14 @@ else
 	target_enemy = instance_nearest(x,y, obj_enemy_parent)
 }
 
-distance = point_distance(x, y, target_enemy.x, target_enemy.y);
+if  instance_exists(target_enemy)
+{
+	distance = point_distance(x, y, target_enemy.x, target_enemy.y);
+}
+else
+{
+	instance_destroy();
+}
 
 	var magia = instance_create_layer(x, y, "Instances", obj_magia);
 		magia.speed = 3;
